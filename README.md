@@ -4,4 +4,6 @@
  颜色:可以通过给button加上类d-btn-primary,d-btn-danger
 
 ````html
+ ![sss](./t1.jpg)
+
 ````
