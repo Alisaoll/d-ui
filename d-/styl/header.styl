@@ -1,0 +1,92 @@
+@import 'variable.styl';
+.{$pf}nav-t{
+   top:0;
+}
+.{$pf}nav-b{
+   bottom:0;
+   display:table !important;
+}
+.{$pf}nav-b .{$pf}nav-b-items{
+  display:table-cell;
+  line-height normal !important;
+  vertical-align middle;
+  text-align center;
+} 
+.{$pf}nav-b .{$pf}nav-b-items span{
+    display block;
+}
+.{$pf}nav{
+	position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 2.2rem;
+    line-height 2.2rem
+    background-color: #18b4ed;
+    color:#fff;
+    display -webkit-box;
+    display -webkit-flex;
+    display flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width:100%
+}
+.{$pf}nav a{
+	color:inherit;
+}
+.{$pf}nav .{$pf}nav-item{
+	width:100%
+}
+.{$pf}nav button{
+	height: 1.5rem;
+    line-height: 1.5rem;
+    min-width: 2.75rem; 
+    text-align: center;
+    font-size: 15px;
+    background-color: #fdfdfd;
+    color: #00a5e0;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+  	 border: 0;
+    border-radius: 3px;
+     position:relative;
+    
+}
+.{$pf}nav button:after{ 
+        width:200%;
+        height:200%;
+        position:absolute;
+        top:0;left:0;z-index:0;
+        content:"";
+        -webkit-transform:scale(0.5);
+        -webkit-transform-origin:0 0;
+        transform:scale(0.5);
+        transform-origin:0 0;
+        }
+.{$pf}header-inner{
+	display -webkit-box;
+	display -webkit-flex;
+	display flex;
+	align-items:center;
+}
+.{$pf}nav .current{
+   
+    border-bottom: 2px red solid;
+}
+
+.{$pf}nav-badge{
+    position: absolute;
+    top: 0;
+    left:2.9rem;
+    font-size: 0.5rem;
+    color: #fff;
+    background-color: #ff2600;
+    border-radius:0.4rem;
+    display: inline-block;
+    height: 0.8rem;
+    padding: 0 0.15rem;
+    line-height: 0.8rem;
+}
+.{$pf}nav-r{
+  position:relative;
+}

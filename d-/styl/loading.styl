@@ -1,0 +1,72 @@
+@import "variable.styl"
+
+//     "../base/mixin",
+    
+//局部加载
+.{$pf}loading{
+    width:20px;
+    height:20px;
+    display:block;
+    background-image url('../img/loading_sprite.png');
+    -webkit-background-size: auto 20px;
+    -webkit-animation:rotate 1s steps(12) infinite
+}
+@-webkit-keyframes rotate {
+    from {
+     background-position: 0 0;
+    }
+    
+    to {
+        background-position: -240px 0;
+    }
+}
+//页面加载中
+
+.{$pf}loading-bright{
+    width: 37px;
+    height: 37px;
+    display: block;
+    background-image: url(../img/loading_sprite_white.png);
+    -webkit-background-size: auto 37px;
+    -webkit-animation: rotate2 1s steps(12) infinite;
+   
+}
+.{$pf}loading-box1{
+     position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center
+    -webkit-box-orient: horizontal;
+   
+}
+
+.{$pf}loading-box{
+    top: 0px;
+    left: 0px;
+    width: 6rem;
+    height: 5rem;
+    z-index: 999;
+    background-color: #000;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical
+    -webkit-box-pack: center;
+    background: rgba(0,0,0,.65);
+    color:#fff;
+    border-radius: 6px;
+}
+@-webkit-keyframes rotate2 {
+    from {
+     background-position: 0 0;
+    }
+    
+    to {
+        background-position: -444px 0;
+    }
+}

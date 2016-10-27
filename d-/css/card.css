@@ -1,0 +1,28 @@
+.d-card-list {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.d-card-image img {
+  width: 100%;
+  display: block;
+}
+.d-card-list .d-card-content,
+.d-card-list .d-card-footer {
+  position: relative;
+  min-height: 2.2rem;
+  padding: 0.5rem 0.75rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.d-card-content-img {
+  padding: 0 !important;
+}
+.d-card-list p {
+  margin-bottom: 0.4rem;
+}
+.d-card-list .d-card-list-inner {
+  margin-left: 0.5rem;
+}

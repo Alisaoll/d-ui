@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<title>搜索</title>
+</head>
+<style type="text/css">
+    *{
+    	margin: 0px;
+    	padding:0px;
+    }
+	html{
+		font-size: 20px;
+	}
+	.box{
+		display: -webkit-box;
+    -webkit-box-pack: center;/*子元素水平对齐方式*/
+    -webkit-box-align: center;/*子元素垂直对齐方式*/
+    height: 2.2rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ebeced;
+    color: #9e9e9e;
+    -webkit-backface-visibility: hidden;/*隐藏被旋转的 div 元素的背面：*/
+    backface-visibility: hidden;
+	}
+	.aui-searchbar-input{
+		margin: 0 0.5rem;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+    width: 100%;
+    position: relative;
+    padding-left: 0.5rem;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+
+	}
+	.nei1{
+		width: 100%
+	}
+	.cancel{
+		font-size: 0.7rem;
+    color: #666666;
+    margin-right: -2.2rem;
+    width: 2.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+	}
+	#search-input{
+		width:80%;
+		display: -webkit-box;
+		background: #fff;
+		border:0px;
+		height: 1.4rem;
+		 outline: none;
+	}
+</style>
+<body>
+
+<div class="box">
+  <div class="aui-searchbar-input aui-border-radius">
+                <input type="text" placeholder="请输入搜索内容" id="search-input">
+            </div>
+            <div class="cancel">取消</div>
+        </div>
+	<script type="text/javascript">
+		$search_input=document.getElementById('search-input');
+		var searchBar = document.querySelector(".cancel");
+		$search_input.onclick=function () {
+			searchBar.style.marginRight=10+'px';
+		}
+		searchBar.onclick=function(){
+			this.style.marginRight = "-"+this.offsetWidth+"px";
+	        document.getElementById("search-input").value = '';
+	        document.getElementById("search-input").blur();
+		}
+	</script>
+
+	
+</body>
+</html>

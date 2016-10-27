@@ -1,0 +1,30 @@
+.d-tab {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.d-tab-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 45px;
+}
+.d-tab-nav li {
+  display-flex: 1;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+.d-tab-nav .current {
+  color: #00a5e0;
+  border-bottom: 2px #00a5e0 solid;
+}
+.d-tab-content > li {
+  width: 100%;
+}
+.d-tab-content-hide {
+  display: none;
+}

@@ -1,0 +1,58 @@
+@import 'variable.styl'
+.avatar{
+  display: block;
+  -webkit-background-size: cover;
+  -webkit-border-radius: 10rem;
+  overflow: hidden;
+}
+.{$pf}avatar-s-50{
+  display: block;
+  -webkit-background-size: cover;
+   width: 2.5rem;
+  height: 2.5rem;
+}
+.{$pf}avatar-s-80{
+  display: block;
+  -webkit-background-size: cover;
+   width: 4rem;
+  height: 4rem;
+}
+.{$pf}avatar-50{
+  @extend .avatar
+   width: 2.5rem;
+  height: 2.5rem;
+}
+.{$pf}avatar-30{
+  @extend .avatar
+   width: 1.5rem;
+  height: 1.5rem;
+}
+.{$pf}avatar-25{
+  @extend .avatar
+   width: 1.25rem;
+  height: 1.25rem;
+}
+.{$pf}avatar-50 > span,.{$pf}avatar-80 > span,.{$pf}avatar-100 > span,.{$pf}avatar-120 > span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-border-radius: 10rem; 
+}
+.{$pf}avatar-80{
+   @extend .avatar
+  width:4rem;
+  height:4rem;
+}
+.{$pf}avatar-100{
+   @extend .avatar
+  width:5rem;
+  height:5rem;
+}
+.{$pf}avatar-120{
+   @extend .avatar
+  width:6rem;
+  height:6rem;
+}

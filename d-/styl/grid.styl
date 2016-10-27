@@ -1,0 +1,62 @@
+@import "mixin.styl"
+@import "variable.styl"
+/*基本容器*/
+.{$pf}container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.{$pf}container-fluid {
+  padding:0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.{$pf}row:after,.{$pf}row:before {
+    content:'';
+    display: table;
+    clear:both;
+}
+.{$pf}col-xs-1, .{$pf}col-sm-1, .{$pf}col-md-1, .{$pf}col-lg-1, .{$pf}col-xs-2, .{$pf}col-sm-2, .{$pf}col-md-2, .{$pf}col-lg-2, .{$pf}col-xs-3, .{$pf}col-sm-3, .{$pf}col-md-3, .{$pf}col-lg-3, .{$pf}col-xs-4, .{$pf}col-sm-4, .{$pf}col-md-4, .{$pf}col-lg-4, .{$pf}col-xs-5, .{$pf}col-sm-5, .{$pf}col-md-5, .{$pf}col-lg-5, .{$pf}col-xs-6, .{$pf}col-sm-6, .{$pf}col-md-6, .{$pf}col-lg-6, .{$pf}col-xs-7, .{$pf}col-sm-7, .{$pf}col-md-7, .{$pf}col-lg-7, .{$pf}col-xs-8, .{$pf}col-sm-8, .{$pf}col-md-8, .{$pf}col-lg-8, .{$pf}col-xs-9, .{$pf}col-sm-9, .{$pf}col-md-9, .{$pf}col-lg-9, .{$pf}col-xs-10, .{$pf}col-sm-10, .{$pf}col-md-10, .{$pf}col-lg-10, .{$pf}col-xs-11, .{$pf}col-sm-11, .{$pf}col-md-11, .{$pf}col-lg-11, .{$pf}col-xs-12, .{$pf}col-sm-12, .{$pf}col-md-12, .{$pf}col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.{$pf}col-xs-1, .{$pf}col-xs-2, .{$pf}col-xs-3, .{$pf}col-xs-4, .{$pf}col-xs-5, .{$pf}col-xs-6, .{$pf}col-xs-7, .{$pf}col-xs-8, .{$pf}col-xs-9, .{$pf}col-xs-10, .{$pf}col-xs-11, .{$pf}col-xs-12 {
+  float: left;
+  padding-left:0;
+}
+_col(xs,3,width);
+_col(xs-pull,3,right);
+_col(xs-push,3,left);
+_col(xs-offset,3,margin-left);
+@media (min-width: 768px) {
+  .{$pf}col-sm-1, .{$pf}col-sm-2, .{$pf}col-sm-3, .{$pf}col-sm-4, .{$pf}col-sm-5, .{$pf}col-sm-6, .{$pf}col-sm-7, .{$pf}col-sm-8, .{$pf}col-sm-9, .{$pf}col-sm-10, .{$pf}col-sm-11, .{$pf}col-sm-12 {
+    float: left;
+  }
+  _col(sm,3,width);
+  _col(sm-pull,3,right);
+  _col(sm-push,3,left);
+  _col(sm-offest,3,margin-left); 
+}
+@media (min-width: 992px) {
+  .{$pf}col-md-1, .{$pf}col-md-2, .{$pf}col-md-3, .{$pf}col-md-4, .{$pf}col-md-5, .{$pf}col-md-6, .{$pf}col-md-7, .{$pf}col-md-8, .{$pf}col-md-9, .{$pf}col-md-10, .{$pf}col-md-11, .{$pf}col-md-12 {
+    float: left;
+  }
+  _col(md,3,width);
+  _col(md-pull,3,right);
+  _col(md-push,3,left);
+  _col(md-offest,3,margin-left);
+ }
+@media (min-width: 1200px) {
+  .{$pf}col-lg-1, .{$pf}col-lg-2, .{$pf}col-lg-3, .{$pf}col-lg-4, .{$pf}col-lg-5, .{$pf}col-lg-6, .{$pf}col-lg-7, .{$pf}col-lg-8, .{$pf}col-lg-9, .{$pf}col-lg-10, .{$pf}col-lg-11, .{$pf}col-lg-12 {
+    float: left;
+  }
+  _col(lg,3,width);
+  _col(lg-pull,3,right);
+  _col(lg-push,3,left);
+  _col(lg-offset,3,margin-left);
+}
+
+/*flex网格*/

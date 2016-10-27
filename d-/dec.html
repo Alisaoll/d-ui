@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<title>d-ui说明文档</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/btn.css"> -->
+    <style type="text/css">
+        .bg{
+            background-color: #eee;
+        }
+        ul li{
+            margin: 0.5rem 0;
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+	<header class="d-nav d-nav-t">
+        <h1 class="d-nav-item d-text-align-c">d-ui的说明文档</h1>  
+    </header>
+    <div class="d-container">
+    <div class="d-flex-row d-margin-t-50 d-border" style="background-color: #fff;">
+    	<div class="d-flex-col d-flex-col-25 d-border-r">
+            <ul class="d-text-align-r d-padding-r-20" style="position: fixed;width: 23%;">
+            	<li><a href="#button"><h1>按钮</h1></a></li>
+                <li><a href="#border"> <h1>1px边框</h1></a></li>
+                <li><a href="#avatar"><h1>头像</h1></a></li>
+                <li><a href="#card"><h1>卡片</h1></a></li>
+            </ul>
+    	</div>
+    	<div class="d-flex-col d-flex-col-75 d-padding-l-20 d-padding-r-20 d-col-xs-offset-3">
+          <ul>
+           <li id="button">
+    		<h1>按钮</h1>
+            <h2>尺寸:可以通过给button加上类d-btn(常规按钮),d-btn-s(小按钮),d-btn-lg(大按钮)</h2>
+            <p>颜色:可以通过给button加上类d-btn-primary,d-btn-danger</p>
+             <ul class="d-container">
+                <li>
+                   <button class="d-btn"> 按钮</button>
+                   <button class="d-btn d-btn-primary"> 按钮</button> 
+                   <button class="d-btn d-btn-danger"> 按钮</button>  
+                   <button class="d-btn-s">确认</button> 
+                   <button class="d-btn-s d-btn-primary">确认</button> 
+                   <button class="d-btn-s d-btn-danger">确认</button></li>   
+                   <li> <button class="d-btn-lg">确认</button> 
+                   <li><button class="d-btn-lg d-btn-primary">确认</button> </li>
+                   <li><button class="d-btn-lg d-btn-danger">确认</button> </li>
+            </ul>
+             <div class="bg" >    
+                <span class="nt">&lt;ul class="d-container"</span><span class="nt">&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;button class="d-btn" </span><span class="nt">&gt;</span><span>按钮&lt;/button&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;button class="d-btn d-btn-primary" </span><span class="nt">&gt;</span><span>按钮&lt;/button&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;button class="d-btn d-btn-danger" </span><span class="nt">&gt;</span><span>按钮&lt;/button&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;button class="d-btn-s" </span><span class="nt">&gt;</span><span>按钮&lt;/button&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;button class="d-btn-s d-btn-primary" </span><span class="nt">&gt;</span><span>按钮&lt;/button&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;button class="d-btn-s d-btn-danger" </span><span class="nt">&gt;</span><span>按钮&lt;/button&gt;</span><br>
+                <span class="nt">&lt;/ul&gt;</span><br>
+             </div>
+            </li>
+           
+            <li id="border">
+                <h1>边框</h1>
+                <p>只需要添加边框类即可:.d-border-t(上边框).d-border(边框) .d-border-b(下边框) .d-border-tb(下边框) .d-border-l(左边框) .d-border-r(右边框)</p>
+                
+                <ul class="">
+                    <li class="d-border-t">上边框</li>
+                    <li class="d-border">边框</li>
+                    <li class="d-border-b">下边框</li>
+                    <li class="d-border-tb">上下边框</li>
+                    <li class="d-border-l">左边框</li>
+                    <li class="d-border-r">右边框</li>
+               </ul>
+             <div class="bg" >    
+                <span class="nt">&lt;ul&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;li class="d-border-t" </span><span class="nt">&gt;</span><span>上边框&lt;/li&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;li class="d-border" </span><span class="nt">&gt;</span><span>边框&lt;/li&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;li class="d-border-b" </span><span class="nt">&gt;</span><span>下边框&lt;/li&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;li class="d-border-tb" </span><span class="nt">&gt;</span><span>上下边框&lt;/li&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;li class="d-border-l" </span><span class="nt">&gt;</span><span>左边框&lt;/li&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;li class="d-border-r" </span><span class="nt">&gt;</span><span>右边框&lt;/li&gt;</span><br>
+                <span class="nt">&lt;/ul&gt;</span><br>
+             </div>
+
+            </li>
+
+
+            <li id="avatar">
+                <h1>头像</h1>
+                <p>.d-avatar-50(定义长宽为50px的头像).d-avatar-80(定义长宽为80px的头像)</p>
+                <p>.d-avatar-100(定义长宽为100px的头像).d-avatar-120(定义长宽为120px的头像)</p>
+
+                 <div class="d-avatar-50">
+                    <span style="background-image:url(t1.jpg)"></span>
+                </div>
+                <div class="d-avatar-80"> <span style="background-image:url(t1.jpg)"></span></div>
+                <div class="d-avatar-100">
+                    <span style="background-image:url(t1.jpg)"></span>
+                </div>
+                <div class="d-avatar-120">
+                    <span style="background-image:url(t1.jpg)"></span>
+                </div>
+                <div class="bg" >    
+                <span>&lt;div class="d-avatar-50" </span><span class="nt">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;span style="background-image:url(t1.jpg)"&gt;</span><br>
+                <span>&lt;/div&gt;</span><br>
+                &nbsp;&nbsp;<span>&lt;div class="d-avatar-80" </span><span class="nt">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;span style="background-image:url(t1.jpg)"&gt;</span><br>
+                <span>&lt;/div&gt;</span><br>
+                <span>&lt;div class="d-avatar-100" </span><span class="nt">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;span style="background-image:url(t1.jpg)"&gt;</span><br>
+                <span>&lt;/div&gt;</span><br>
+                <span>&lt;div class="d-avatar-120" </span><span class="nt">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;span style="background-image:url(t1.jpg)"&gt;</span><br>
+                <span>&lt;/div&gt;</span>
+             </div>
+            </li>
+            <li id="card">
+                <h1>简单卡片</h1>
+                <p>.d-avatar-50(定义长宽为50px的头像).d-avatar-80(定义长宽为80px的头像)</p>
+                <div class="d-container">
+                    <div class="d-row">
+                      <div class="d-col-md-3">
+                           <div class="d-card-list d-border d-shadow-2" >
+                                <div class="d-card-content">一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出长度省略，内容一行文字超出长度省略</div>
+                                <div class="d-card-footer d-border-t"><p>图片底部</p></div>
+                           </div>
+                       </div>
+                    </div>
+                </div>              
+                <div class="bg" >   
+                   <span class="nt">&lt;div class="d-container"&gt;</span><br>
+                    &nbsp;&nbsp;<span>&lt;div class="d-row" </span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-col-md-3"</span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-list d-border d-shadow-2"</span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-content"</span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">一一行文字超出长度省略，内容一行文字超出长度省略，<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内容一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出长度省略，内容一行文字超出长度省略 <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-footer d-border-t"</span><span class="nt">&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p&gt;</span>图片底部 &lt;/p&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp; <span class="nt">&lt;/div&gt;</span><br>
+                     <span class="nt">&lt;/div&gt;</span><br>
+                </div>
+                 <h1>风格卡片</h1>
+                <p>.d-avatar-50(定义长宽为50px的头像).d-avatar-80(定义长宽为80px的头像)</p>
+                <div class="container">
+                    <div class="d-row">
+                      <div class="d-col-md-3">
+                           <div class="d-card-list d-border d-shadow-2" >
+                                <div  class="d-card-content" style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)">旅途的山</div>
+                                <div class="d-card-content">
+                                  <p class="d-txt-info">发表于 2015/01/15</p>
+                                  <p>每一条css样式定义由两部分组成，形式如下选择器样式 在之前的部分就是“选择器”。 “选择器”指明了中的“样式”的作用对象</p>
+                                </div>
+                                <div class="d-card-footer d-border-t d-flex-box d-justify-content">                         
+                                        <a href="javascript:void(0)">赞</a>
+                                        <a href="javascript:void(0)">更多</a>
+                                </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>           
+                <div class="bg" >   
+                   <span class="nt">&lt;div class="d-container"&gt;</span><br>
+                    &nbsp;&nbsp;<span>&lt;div class="d-row" </span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-col-md-3"</span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-list d-border d-shadow-2"</span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-content" style="background-image:url(xxx.jpg)"&gt; </span><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;旅途的山<br> 
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-content"&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p class="d-txt-info"&gt;</span>发表于 2015/01/15 &lt;/p&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p&gt;</span>每一条css样式定义由两部分组成，形式如下选择器样式 在之前的部分就是“选择器”&lt;/p&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-footer d-border-t d-flex-box d-justify-content"&gt;</span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>赞&lt;/p&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>更多&lt;/p&gt;<br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp; <span class="nt">&lt;/div&gt;</span><br>
+                     <span class="nt">&lt;/div&gt;</span><br>
+                </div>
+
+                <h1>facebook卡片</h1>
+                <p>.d-avatar-50(定义长宽为50px的头像).d-avatar-80(定义长宽为80px的头像)</p>
+               <div class="d-container-fluid">
+                   <div class="d-card-list d-border d-shadow-2" >
+                      <div class="d-flex-box d-card-content">                        
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">                    
+                           <div class="d-card-list-inner">
+                                <p>夜萧</p>
+                                <p class="d-txt-info">星期一 3:47pm</p>
+                           </div>
+                      </div>
+                      <div class="d-card-image">
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                      </div>
+                      <div class="d-card-footer d-flex-box d-justify-content">                         
+                        <a href="javascript:void(0)">赞</a>
+                        <a href="javascript:void(0)">评论</a>
+                        <a href="javascript:void(0)">分享</a>
+                      </div>
+                     </div>
+              </div>   
+                <div class="bg" >   
+                   <span class="nt">&lt;div class="d-container-fluid"&gt;</span><br>
+                    &nbsp;&nbsp;<span>&lt;div class="d-card-list d-border d-shadow-2"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-flex-box d-card-content"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;img class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-list-inner"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p &gt;</span> &lt;夜萧 /p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p class="d-txt-info" &gt;</span>&lt;星期一 3:47pm /p&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-image"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-footer d-border-t d-flex-box d-justify-content"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;a href="javascript:void(0)"&gt;</span>赞&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;a href="javascript:void(0)"&gt;</span>评论&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;a href="javascript:void(0)"&gt;</span>分享&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+
+                    &nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     <span class="nt">&lt;/div&gt;</span><br>
+                </div>
+
+           <!--  <div class="d-container-fluid">
+               <div class="d-card-list d-border d-shadow-2" >
+                  <div class="d-flex-box d-card-content">
+                        <div class="">
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">
+                        </div>
+                        <div class="d-card-list-inner">
+                            <p>夜萧</p>
+                            <p class="d-txt-info">星期一 3:47pm</p>
+                        </div>
+                    
+                  </div>
+                  <div class="d-flex-box">
+                       <div class="d-card-image">
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                       </div>
+                       <div class="d-card-image d-margin-lr-2">
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                       </div>
+                       <div class="d-card-image">
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                       </div>
+                  </div>     
+                  <div class="d-card-footer d-flex-box d-justify-content">                         
+                        <a href="javascript:void(0)">赞</a>
+                        <a href="javascript:void(0)">评论</a>
+                        <a href="javascript:void(0)">分享</a>
+                  </div>
+              </div>
+            </div>  -->
+           <!--  <div class="bg" >   
+                   <span class="nt">&lt;div class="d-container-fluid"&gt;</span><br>
+                    &nbsp;&nbsp;<span>&lt;div class="d-card-list d-border d-shadow-2" </span><span class="nt">&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-flex-box d-card-content"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div class="d-card-list-inner"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p &gt;</span> &lt;夜萧/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="nt">&lt;p class="d-txt-info" 星期一 3:47pm &lt;/p&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;div class="d-flex-box"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-image"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-image d-margin-lr-2"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-image"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                    &nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;div class="d-card-footer d-flex-box d-justify-content"&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;a href="javascript:void(0)"&gt;</span>赞&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;a href="javascript:void(0)"&gt;</span>评论&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;a href="javascript:void(0)"&gt;</span>分享&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+
+                    &nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     <span class="nt">&lt;/div&gt;</span><br>
+                </div> -->
+               <!--  <pre><code class="html">
+                  <div class="bg" >   
+                   <span class="nt">&lt;div class="d-container-fluid"&gt;</span><br>
+                   <span>&lt;div class="d-card-list d-border d-shadow-2"&gt;</span><br>
+                    p <span>&lt;div class="d-flex-box d-card-content"&gt;</span><br>
+                     <span>&lt;img class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                    <span>&lt;div class="d-card-list-inner"&gt;</span><br>
+                    <span class="nt">&lt;p &gt;</span> &lt;夜萧 /p&gt;<br>
+                    <span class="nt">&lt;p class="d-txt-info" &gt;</span>&lt;星期一 3:47pm /p&gt;</span><br>
+                    <span class="nt">&lt;/div&gt;</span><br>
+                    <span class="nt">&lt;/div&gt;</span><br>
+                    <span class="nt">&lt;div class="d-card-image"&gt;</span><br>
+                   <span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span><br>
+                   <span class="nt">&lt;/div&gt;</span><br>
+
+                    <span class="nt">&lt;div class="d-card-footer d-border-t d-flex-box d-justify-content"&gt;</span><br>
+                   <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>赞&lt;/a&gt;<br>
+                    <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>评论&lt;/a&gt;<br>
+                    <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>分享&lt;/a&gt;<br>
+                  <span class="nt">&lt;/div&gt;</span><br>
+
+                    &nbsp;&nbsp;<span class="nt">&lt;/div&gt;</span><br>
+                     <span class="nt">&lt;/div&gt;</span><br>
+                </div>
+</code></pre> -->
+                <pre>
+                    <code>
+                        <div class="bg">
+                            <span class="nt">&lt;div class="d-container-fluid"&gt;</span>
+                             <span>&lt;div class="d-card-list d-border d-shadow-2"&gt;</span>
+                               <span>&lt;div class="d-flex-box d-card-content"&gt;</span>
+                                  <span>&lt;img class="d-avatar-s-50" src="xxx.jpg" &gt; </span>
+                                    <span>&lt;div class="d-card-list-inner"&gt;</span>
+                                      <span class="nt">&lt;p &gt;</span> &lt;夜萧 /p&gt;
+                                      <span class="nt">&lt;p class="d-txt-info" &gt;</span>&lt;星期一 3:47pm /p&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                  <span class="nt">&lt;/div&gt;</span>
+                                  <span class="nt">&lt;div class="d-card-image"&gt;</span>
+                                     <span>&lt;img  class="d-avatar-s-50" src="xxx.jpg" &gt; </span>
+                                  <span class="nt">&lt;/div&gt;</span><br>
+                                  <span class="nt">&lt;div class="d-card-footer d-border-t d-flex-box d-justify-content"&gt;</span>
+                                    <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>赞&lt;/a&gt;
+                                    <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>评论&lt;/a&gt;
+                                    <span class="nt">&lt;a href="javascript:void(0)"&gt;</span>分享&lt;/a&gt;
+                                  <span class="nt">&lt;/div&gt;</span>
+                              <span class="nt">&lt;/div&gt;</span>
+                             <span class="nt">&lt;/div&gt;</span>
+
+                        </div>
+                    </code>
+                </pre>
+            </li>
+          </ul>
+    	</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

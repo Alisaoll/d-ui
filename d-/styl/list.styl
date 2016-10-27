@@ -1,0 +1,65 @@
+@import 'variable.styl'
+.{$pf}list{
+	background-color #fff;
+	margin-bottom 1rem;
+	width:100%;
+}
+.{$pf}list-content{
+	box-sizing: border-box;
+    min-height: 2.2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.{$pf}list .{$pf}list-items{
+	display -webkit-box;
+	display -webkit-flex;
+	display flex;
+		width:100%
+		box-sizing: border-box;	
+  justify-content: start;      
+	
+}
+.{$pf}list-items .{$pf}list-img-wrap{
+    margin:0 0.05rem;
+}
+.{$pf}list li{
+    padding:0.25rem;
+}
+.{$pf}list-info{
+	padding-left:0.55rem;
+    // padding-right:0.75rem;   
+	-webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display:box;
+    box-pack:center;
+}
+.{$pf}list-txt{
+    font-size: 0.65rem;
+    color: #5f646e;
+    line-height: 1rem;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    padding-bottom:0.25rem
+}
+.{$pf}list-txt-clamp-2{
+    -webkit-line-clamp: 2;
+}
+.{$pf}list-txt-clamp-3{
+    -webkit-line-clamp: 3;
+}

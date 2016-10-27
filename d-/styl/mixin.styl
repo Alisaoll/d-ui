@@ -1,0 +1,74 @@
+//按钮属性
+_btn($btn-bg-color,$color,$btn-border-color){
+	background-color: $btn-bg-color;
+    color: $color;
+   border-color: $btn-border-color;    
+}
+//处理栅格类
+$array =0 1 2 3 4 5 6 7 8 9 10 11 12;
+$a = 100%/12;
+_col($type,$i,$attr){
+    for $i in $array{
+        if($attr=='width'){
+        .d-col-{$type}-{$i}{
+            width:$i*$a;
+            padding:0.125rem;
+        }
+        }
+        if($attr=='right'){
+        .d-col-{$type}-{$i}{
+            right:$i*$a;
+        }
+        }
+        if($attr=='left'){
+        .d-col-{$type}-{$i}{
+            left:$i*$a;
+        }
+        }
+         if($attr=='margin-left'){
+        .d-col-{$type}-{$i}{
+            margin-left:$i*$a;
+        }
+        }
+        
+    }
+}
+_label_($color,$background_color){
+       color: $color;
+      background-color: $background_color;
+}
+_label_outline($color){
+       color: $color;
+      border-color: $color;
+}
+
+
+_border-radius($bordercolor,$border-radius-base,$border-radius-lg){
+    border: 1px solid $bordercolor;
+    border-radius: $border-radius-base;
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        position: relative;
+        border: 0;
+        &:before{
+            content:"";
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid $bordercolor;
+            -webkit-transform:scale(.5);
+            -webkit-transform-origin: 0 0;
+            padding: 1px;
+            -webkit-box-sizing: border-box;
+            border-radius: $border-radius-lg;
+            pointer-events: none;
+        }
+    }
+}
+//  //初始化浏览器带有前缀的属性
+// compatible($s,$attribute){
+//   -webkit-{$s}: $attribute
+//   -moz-{$s}: $attribute
+//   {$s}: $attribute
+//   }

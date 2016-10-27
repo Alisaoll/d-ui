@@ -1,0 +1,40 @@
+a {
+  color: #00a5e0;
+}
+h1 {
+  font-size: 0.9rem;
+}
+h2 {
+  font-size: 0.85rem;
+}
+h3,
+h4 {
+  font-size: $font-size-title;
+}
+h5,
+.d-txt-sub {
+  font-size: 0.7rem;
+}
+h6,
+.d-txt-tips {
+  font-size: 0.6rem;
+}
+.d-txt-default {
+  color: #000;
+}
+.d-txt-white {
+  color: #fff;
+}
+.d-txt-info {
+  color: #777;
+}
+.d-txt-muted {
+  color: #bbb;
+}
+.d-txt-warning,
+.d-txt-red {
+  color: #ff4222;
+}
+.d-txt-primary {
+  color: #00a5e0;
+}

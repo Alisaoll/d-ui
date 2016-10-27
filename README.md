@@ -127,7 +127,6 @@ margin-right: 10px;">文本样式</a>
 <div id="avatar"></div>
 .d-avatar-50(定义长宽为50px的头像).d-avatar-80(定义长宽为80px的头像)
 .d-avatar-100(定义长宽为100px的头像).d-avatar-120(定义长宽为120px的头像)
-
 ![sss](./img/avatar.png)
 ````html
 <div class="d-avatar-50">
@@ -146,6 +145,15 @@ margin-right: 10px;">文本样式</a>
 ###卡片
 <div id="card"></div>
 伴随着列表视图，卡片是一种很好的方法来控制和组织你的信息。卡片含有独特的相关数据，例如，照片，文字和所有关于一个主题的链接。卡片通常是更复杂的和详细的信息的一个切入点
+
+.d-col-md--3表示栅格类，表示屏幕大于992px时，占屏幕宽度的1/4
+
+.d-shadow-2  边上阴影，后面的数字便是阴影程度，数字越大，阴影越大，数字从1到5
+
+.d-border 表示边框；
+.d-border-t表示上边框；
+.d-content表示卡片的中心内容区域
+.d-card-footer表示卡片的底部
 ####简单卡片
 ![](./img/card1.png)
 ````html
@@ -161,6 +169,10 @@ margin-right: 10px;">文本样式</a>
 </div> 
 ````
 ###风格卡片
+.d-txt-info 修饰字体的颜色为 #777
+.d-flex-box表示为弹性布局
+.d-justify-content:弹性项目平均分布在该行上,两边不留空隙
+
 ![](./img/card2.png)
 ````html
 <div class="container">
@@ -182,13 +194,16 @@ margin-right: 10px;">文本样式</a>
 </div>    
 ````
 ####facebook卡片
+.d-avatar-s-50 表示该图片为(50*50的矩形图片)
+.d-margin-l-10 辅助类，表示margin-left:10px;
+
 ![](./img/card3.png)
 ````html
 <div class="d-container-fluid">
    <div class="d-card-list d-border d-shadow-2" >
       <div class="d-flex-box d-card-content">                        
            <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">                    
-           <div class="d-card-list-inner">
+           <div class="d-margin-l-10">
                 <p>夜萧</p>
                 <p class="d-txt-info">星期一 3:47pm</p>
            </div>
@@ -213,7 +228,7 @@ margin-right: 10px;">文本样式</a>
         <div class="">
            <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">
         </div>
-        <div class="d-card-list-inner">
+        <div class="d-margin-l-10">
             <p>夜萧</p>
             <p class="d-txt-info">星期一 3:47pm</p>
         </div>
@@ -248,7 +263,7 @@ margin-right: 10px;">文本样式</a>
         <div class="">
            <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">
         </div>
-        <div class="d-card-list-inner">
+        <div class="d-margin-l-10">
             <p>夜萧</p>
             <p class="d-txt-info">星期一 3:47pm</p>
         </div>
@@ -287,6 +302,10 @@ margin-right: 10px;">文本样式</a>
 ````
 ####进度条
 <div id="progress"></div>
+.d-progress-inner-30表示进度为30%
+.d-progress-inner-50表示进度为50%
+.d-progress-inner-80表示进度为80%
+
 ![](./img/progress.png)
 ````html
 <div class="d-progress">
@@ -300,22 +319,31 @@ margin-right: 10px;">文本样式</a>
 </div>
 ````
 ####标题栏
+.d-nav-t 表示标题栏固位在头部
+.d-text-align-c表示 文字水平居中
+.d-text-align-l 表示 text-align:left
+.d-text-align-r 表示 text-align:right
+.d-padding-l-10 表示 padding-left:10px
+.d-padding-r-10 表示 padding-right:10px
+
 <div id="header"></div>
 ![](./img/header.png)
 ````html
 <header class="d-nav d-nav-t">
     <a class="d-flex-col-50 d-text-align-l d-padding-l-10" >
-      <span class="icon icon-left"><</span>
-      返回
+      <span><</span>
+       返回
     </a>
      <h1 class="d-nav-item d-text-align-c">内容内容内</h1>
     <a class="d-flex-col-50 d-text-align-r d-padding-r-10">
-      下一步
-      <span class="icon icon-right">></span>
+       下一步
+      <span>></span>
     </a> 
 </header>
 ````
 ####带按钮的标题栏
+.d-flex-col-50 表示width:50%
+
 ![](./img/header2.png)
 ````html
 <header class="d-nav d-nav-t">
@@ -324,13 +352,15 @@ margin-right: 10px;">文本样式</a>
       返回
     </a>
      <h1 class="d-nav-item d-text-align-c">内容内容内</h1>
-    <a class="d-flex-col-33 d-text-align-r d-padding-r-10 d-header-inner">
+    <a class="d-flex-col-50 d-text-align-r d-padding-r-10 d-header-inner">
        <button class="">回首页</button>
     </a>   
 </header>
 ````
 ####底部工具栏
 <div id="header-b"></div>
+.d-nav-b:表示将工具栏固定在底部
+
 ![](./img/header-b.png)
 ````html
 <header class="d-nav d-nav-b">
@@ -358,30 +388,36 @@ margin-right: 10px;">文本样式</a>
 ````
 ####列表一
 <div id="list"></div>
+.d-list:表示列表容器
+.d-list-content列表里面的内容
+.d-list-info列表里面的信息容器
+.d-flex-col-90表示占的宽度为90%
+.d-nowrap-multi 辅助类 设置两行自动省略
+
 ![](./img/list1.png)
 ````html
 <ul class="d-list d-border-tb">
    <li class="d-border-b">
         <a class="d-list-content d-txt-info">
-            <div class="d-list-thumb">
+            <div>
                  <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-80">
             </div>
             <div class="d-list-info d-flex-col-90">
                <h1>标题1</h1>
                <h3>标题2</h3>
-               <p class="d-list-txt d-list-txt-clamp-2">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <p class="d-list-txt d-nowrap-multi">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
             </div>
         </a>
    </li>
     <li class="d-border-b">
         <a class="d-list-content d-txt-info">
-            <div class="d-list-thumb">
+            <div>
                  <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-80">
             </div>
             <div class="d-list-info d-flex-col-90">
                <h1>标题1</h1>
                <h3>标题2</h3>
-               <p class="d-list-txt d-list-txt-clamp-2">哈哈妞儿儿就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻</p>
+               <p class="d-list-txt d-nowrap-multi">哈哈妞儿儿就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻</p>
             </div>   
         </a>
    </li>
@@ -393,13 +429,16 @@ margin-right: 10px;">文本样式</a>
         <div class="d-list-info d-flex-col-90">
            <h1>标题1</h1>
            <h3>标题2</h3>
-           <p class="d-list-txt d-list-txt-clamp-2">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+           <p class="d-list-txt d-nowrap-multi">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
         </div>
     </a>
    </li>   
 </ul>
 ````
 ####混合列表
+.d-txt-tips 设置字体大小为0.6rem
+.d-nowrap-multi-3 辅助类，设置三行自动省略
+
 ![](./img/list2.png)
 ````html
 <ul class="d-list d-border-tb">
@@ -448,14 +487,53 @@ margin-right: 10px;">文本样式</a>
         <div class="d-col-xs-8">
            <h1>标题1</h1>
            <h3>标题2</h3>
-           <p class="d-list-txt d-list-txt-clamp-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+           <p class="d-list-txt d-nowrap-multi-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
         </div>
       </div>
    </li>
 </ul>
 ````
+####图文列表
+![](./img/list3.png)
+````html
+<ul class="d-list d-border-tb">
+   <li class="d-border-b">
+     <a class="d-txt-info d-flex d-flex-item-center">
+            <div class="d-flex d-flex-item-center">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+    
+            <div class="d-flex d-flex-item-center ">
+               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
+               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
+            </div>
+      
+          </a>
+   </li>
+    <li class="d-border-b">
+     <a class="d-txt-info d-flex d-flex-item-center">
+            <div class="d-flex d-flex-item-center">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+    
+            <div class="d-flex d-flex-item-center ">
+               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
+               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
+            </div>
+      
+          </a>
+   </li>
+</ul>
+````
 ####角标
 <div id="tag"></div>
+.d-tag-b-l 设置角标位置在左下角
+.d-tag-b-r 设置角标位置在右下角
+.d-tag-t-l 设置角标位置在左上角
+.d-tag-t-r 设置角标位置在右下角
+
 ![](./img/tag.png)
 ````html
 <div class="d-flex-row">
@@ -479,6 +557,7 @@ margin-right: 10px;">文本样式</a>
 ####阴影
 <div id="shadow"></div>
 根据阴影的程度可添加类 .d-shadow-1,d-shadow-2,d-shadow-3,d-shadow-4,d-shadow-5即可
+
 ![](./img/shadow.png)
 ````html
 <div class="container">
@@ -548,6 +627,8 @@ $search_input=document.getElementById('search-input');
 ````
 ####弹出框
 <div id="dialog"></div>
+.d-dialog:表示为弹出框的容器
+
 ![](./img/dialog.png)
 ````html
 <div class="d-dialog" id="d-dialog">
@@ -561,7 +642,7 @@ $search_input=document.getElementById('search-input');
             <div>开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
         </div>
         <div class="d-dialog-footer">
-            <button class="close">开通</button>
+            <button class="close">关闭</button>
             <button >开通</button>
         </div>
   </div>
@@ -702,6 +783,7 @@ $search_input=document.getElementById('search-input');
 ````
 ####栅格一
 d-col-xs-*(小屏幕栅格类)d-col-md-*(中等屏幕栅格类)d-col-lg-*(大屏幕栅格类)
+
 <div id="grid"></div>
 ![](./img/grid.png)
 ````html
@@ -752,6 +834,11 @@ d-col-xs-*(小屏幕栅格类)d-col-md-*(中等屏幕栅格类)d-col-lg-*(大屏
 
 ####文本样式
 <div id="txt"></div>
+.d-txt-info 表示文本字体颜色为 #777;
+.d-txt-red  表示文本字体为 #ff4222;
+.d-txt-warning 表示文本字体为 #ff4222;
+.d-txt-red  表示文本字体为 #bbb;
+
 ![](./img/txt.png)
 ````html
 <h1 class="d-txt-info">dddd</h1>

@@ -1,0 +1,55 @@
+.tag-p,
+.d-tag-b-r:before,
+.d-tag-b-l:before,
+.d-tag-t-r:before,
+.d-tag-t-l:before {
+  padding: 0.1rem;
+  border-radius: 0.15rem;
+}
+.d-tag {
+  position: relative;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.d-tag:before {
+  position: absolute;
+  font-size: 10px;
+  width: 28px;
+  height: 13px;
+  line-height: 13px;
+  z-index: 9;
+  text-align: center;
+}
+.d-tag-b-r:before {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  color: #fff;
+  background-color: #5fb336;
+  content: '免费';
+}
+.d-tag-b-l:before {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  color: #fff;
+  background-color: #5fb336;
+  content: '免费';
+  padding: 0.1rem;
+}
+.d-tag-t-r:before {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: #fff;
+  background-color: #5fb336;
+  content: '免费';
+}
+.d-tag-t-l:before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: #fff;
+  background-color: #5fb336;
+  content: '免费';
+}

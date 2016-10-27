@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<style type="text/css">
+*{
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+    vertical-align: top;
+    text-align: center;
+}
+    .uls{
+        width: 800px; 
+
+        display: -moz-box; 
+        display: -webkit-box; 
+        display: box; 
+        margin: 40px auto; 
+        line-height: 80px;
+        text-align: center;
+        box-pack:center;
+    }
+    .uls .item1{
+        -moz-box-flex: 1; 
+        -webkit-box-flex: 1; 
+        box-flex: 1;
+        height:80px;
+
+    }
+    .uls .item2{
+        -moz-box-flex: 2; 
+        -webkit-box-flex: 2; 
+        box-flex: 2;
+        height:80px;
+        margin:0 10px;
+    }
+    .uls .item3{
+        -moz-box-flex: 3; 
+        -webkit-box-flex: 3; 
+        box-flex: 3;
+        height:80px;
+    }
+    .test_box {
+    display: -webkit-box;  /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */  
+    display: -moz-box;    /* 老版本语法: Firefox (buggy) */  
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */  
+    display: -webkit-flex;  /* 新版本语法： Chrome 21+ */  
+    display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */  
+    /*垂直居中*/  
+    /*老版本语法*/  
+    -webkit-box-align: center;  
+    -moz-box-align: center;  
+    /*混合版本语法*/  
+    -ms-flex-align: center;  
+    /*新版本语法*/  
+    -webkit-align-items: center;  
+    align-items: center;  
+    /*水平居中*/  
+    /*老版本语法*/  
+    -webkit-box-pack: center;  
+    -moz-box-pack: center;  
+    /*混合版本语法*/  
+    -ms-flex-pack: center;  
+    /*新版本语法*/  
+    -webkit-justify-content: center;  
+    justify-content: center;  
+    margin: 0;  
+ }
+.list {
+  /*  padding: 0 1em; */
+    height:100px;
+    text-shadow: 1px 1px #eee;
+    background-color: #f60;
+}
+.list_one {
+    width:100px;
+    background-color: blue;
+}
+.list_two{
+    -moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+    background-color: yellow;
+    display: -webkit-box;  /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */  
+    display: -moz-box;    /* 老版本语法: Firefox (buggy) */  
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */  
+    display: -webkit-flex;  /* 新版本语法： Chrome 21+ */  
+    display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */  
+    /*垂直居中*/  
+    /*老版本语法*/  
+    -webkit-box-align: center;  
+    -moz-box-align: center;  
+    /*混合版本语法*/  
+    -ms-flex-align: center;  
+    /*新版本语法*/  
+    -webkit-align-items: center;  
+    align-items: center;  
+    /*水平居中*/  
+    /*老版本语法*/  
+    -webkit-box-pack: center;  
+    -moz-box-pack: center;  
+    /*混合版本语法*/  
+    -ms-flex-pack: center;  
+    /*新版本语法*/  
+    -webkit-justify-content: center;  
+    justify-content: center;  
+}
+.row {
+display: table-row;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="d-row">
+          <div class="d-col-md-3 d-col-sm-6 d-col-xs-12">
+               <div class="d-card-list d-border d-shadow-2" >
+                    <div class="d-card-image"><img src="t1.jpg"></div>
+                    <div class="d-card-content">图片标题</div>
+                    <div class="d-card-footer d-border-t"><p>图片底部</p></div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-label d-label-outlined">标签</div>
+        <div class="d-label d-label-primary">标签</div>
+        <div class="d-label d-label-success">标签</div>
+        <div class="d-label d-label-info">标签</div>
+        <div class="d-label d-label-warning">标签</div>
+        <div class="d-label d-label-danger">标签</div>
+    </div>
+    <div class="container">
+        <button class="d-btn-s">确认</button>
+        <button class="d-btn-s d-btn-primary">确认</button>
+        <button class="d-btn-s d-btn-danger">确认</button>
+        <h1 class="d-txt-info">dddd</h1>
+        <h2><a>dddd</a></h2>
+        <h3 class="d-txt-red">dddd</h3>
+        <h4 class="d-txt-warning">dddd</h4>
+        <h5 class="d-txt-muted">dddd</h5>
+        <div class="d-nowrap">
+                一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，
+            </div>
+        <div class="d-nowrap-multi">
+                一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，
+        </div>
+        <div class="d-nowrap-flex">
+            一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，一行文字超出长度省略，
+        </div>
+        
+        
+    </div>
+<!-- <ul class="container uls">
+   <li class="flex-item item1" style="background-color: #ccc">1</li>
+   <li class="flex-item item2" style="background-color: blue">2</li>
+   <li class="flex-item item3" style="background-color: yellow">3</li>
+  
+</ul>
+    <div class="test_box">
+    <div class="list list_two d-txt-tip" style="overflow: hidden;">
+            <span>一行文字超出长度省略，内容一行文字超出长度省略，内容
+            </span>
+    </div>
+    <div class="list list_one"><img src="t1.jpg"></div>
+    
+</div>
+<div style="width:600px;display: table">
+<div class="row">
+    <div style="display: table-cell; vertical-align: middle;
+">一一行文字超出长度省略，内容一行文字超出长度省略，内容<br>一行文字超出长度省略，内容一行文字超出长度省略，内容</div>
+    <div style="display: table-cell; vertical-align: middle;" ><img src="t1.jpg"></div>
+
+</div>
+</div> -->
+
+<!-- <div class="d-loading-block show">
+                <div class="d-loading-cnt">
+                    <i class="d-loading-bright"></i>
+                    <p>正在加载中...</p>
+                </div>
+            </div>
+<div class="d-loading"></div> -->
+<!-- <div class="d-loading-box1">
+    <div class="d-loading-box">
+      <div class="d-loading-bright"></div>
+      <p style="color:#fff">正在加载中...</p>
+    </div>
+    
+</div> -->
+<div class="container">
+        <div class="d-row">
+          <div class="d-col-md-3">
+               <div class="d-card-list d-border d-shadow-1" >
+                    <div class="d-card-content">一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出出长度省略，内容一行文字超出长度省略，内容</div>
+                    <div class="d-card-footer d-border-t"><p>图片底部</p></div>
+               </div>
+           </div>
+        </div>
+    </div>  
+    <div class="container">
+        <div class="d-row">
+          <div class="d-col-md-3">
+               <div class="d-card-list d-border d-shadow-2" >
+                    <div class="d-card-content">一一行文字超出长度省略，内容一行文字超出长度省略，一行文字超出长度省略，内容一行文字超出长度省略度省略，内容</div>
+                    <div class="d-card-footer d-border-t"><p>图片底部</p></div>
+               </div>
+           </div>
+        </div>
+    </div>  
+    <div class="container">
+        <div class="d-row">
+          <div class="d-col-md-3">
+               <div class="d-card-list d-border d-shadow-3" >
+                    <div class="d-card-content">一一行文字超出长度省略，内容一行文字出长度省略，内容一行文字超出长度省略，内容</div>
+                    <div class="d-card-footer d-border-t"><p>图片底部</p></div>
+               </div>
+           </div>
+        </div>
+    </div>  
+
+<div class="d-flex-box d-border">
+    <div class="d-flex-box-item d-border-l">1</div>
+    <div class="d-flex-box-item d-border-l">1</div>
+    <div class="d-flex-box-item d-border-l">1</div>
+    <div class="d-flex-box-item d-border-l">1</div>
+</div> 
+<div class="d-flex-box d-flex-pack-start d-border">
+    <div class="">1</div>
+    <div class="">2</div>
+</div>     
+<div class="d-flex-box d-flex-pack-end d-border">
+    <div class="">1</div>
+    <div class="">2</div>
+</div> 
+<div class="d-flex-box d-flex-pack-start d-flex-align-center d-border">
+    <div class="">1</div>
+    <div class="">2</div>
+</div>   
+<div class="d-flex-box d-flex-pack-center d-flex-align-start d-border">
+    <div class="">1</div>
+    <div class="">2</div>
+</div>      
+<div class="d-flex-box d-flex-pack-end d-flex-align-end d-border">
+    <div class="">1</div>
+    <div class="">2</div>
+</div>   
+<div class="d-flex-box d-flex-pack-center d-flex-align-center d-border">
+    <div class="">1</div>
+    <div class="">2</div>
+</div> 
+<div class="demo-item">
+        <p class="demo-desc">float网格适合多行</p>
+        <div class="demo-block">
+            <ul class="d-flex-row">
+                <li class="d-flex-col d-flex-col-50 d-border">50</li>
+                <li class="d-flex-col d-flex-col-50 d-border">50</li>
+                <li class="d-flex-col d-flex-col-25 d-border">25</li>
+                <li class="d-flex-col d-flex-col-75 d-border">75</li>
+                <li class="d-flex-col d-flex-col-33 d-border">33</li>
+                <li class="d-flex-col d-flex-col-67 d-border">67</li>
+                <li class="d-flex-col d-flex-col-20 d-border">20</li>
+                <li class="d-flex-col d-flex-col-80 d-border">80</li>
+                <li class="d-flex-col d-flex-col-10 d-border">10</li>
+                <li class="d-flex-col d-flex-col-90 d-border">90</li>
+            </ul>
+        </div>
+</div> 
+<div class="d-flex-row">
+    <div class=" d-flex-col d-tag d-tag-b-l d-flex-col-50">
+        <img src="t1.jpg">
+    </div>
+    <div class="d-flex-col d-tag d-tag-b-r d-flex-col-50">
+        <img src="t1.jpg">
+    </div>
+    <div class="d-flex-col d-tag d-tag-b-l d-flex-col-50">
+        <img src="t1.jpg">
+    </div>
+    <div class="d-flex-col d-tag d-tag-t-l d-flex-col-50">
+        <img src="t1.jpg">
+    </div>
+    <div class="d-flex-col d-tag d-tag-t-r d-flex-col-50">
+        <img src="t1.jpg">
+    </div>
+</div>
+ <div class="d-avatar-80">
+    <img src="t1.jpg">
+</div>
+<div class="d-avatar-50">
+    <span style="background-image:url(t1.jpg)"></span>
+ </div>
+  <div class="d-avatar-100">
+    <span style="background-image:url(t1.jpg)"></span>
+  </div>
+
+  <div class="d-avatar-120">
+    <span style="background-image:url(t1.jpg)"></span>
+  </div>
+  <div class="d-progress">
+    <span class="d-progress-inner-30"></span>
+  </div>
+   <div class="d-progress">
+    <span class="d-progress-inner-50"></span>
+  </div>
+   <div class="d-progress">
+    <span class="d-progress-inner-80"></span>
+  </div>
+  <!-- <div class="d-dialog" id="d-dialog">
+      <div class="d-dialog-box">
+           <header class="d-dialog-hd">
+                        <h3>新手任务</h3>
+                        <span class="close">X</span>
+            </header>
+             <div class="d-dialog-content">
+                <h4>标题标题</h4>
+                <div>开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
+            </div>
+            <div class="d-dialog-footer">
+                <button class="close">开通</button>
+                <button >开通</button>
+
+            </div>
+      </div>
+  </div>   -->
+  <div class="d-placehold-wrap">
+      <div class="d-placehold">1111</div>
+  </div>
+  
+      <!-- <div class="d-placehold-wrap">
+         <img src="t1.jpg">
+      </div> -->
+      <div class="d-placehold-wrap">
+         <span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span>
+        
+      </div>
+  
+  <div class="d-justify">开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
+  <div class="d-search">
+      <div class="d-search-box ">
+            <input type="text" placeholder="请输入搜索内容" id="search-input">
+      </div>
+      <div class="cancel">取消</div>
+    </div>
+   <ul class="d-justify">
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                      <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+                    <li class="d-justify-item"><div class="test-img"></div><p>xxx</p></li>
+    </ul>
+    <ul class="d-justify-flex">
+                <li class="test-img">1</li>
+                <li class="test-img">1</li>
+                <li class="test-img">1</li>
+                <li class="test-img">1</li>
+    </ul>
+    <p>表单1</p>
+    <div class="d-form d-border-tb">
+        <div class="d-form-item d-border-b">
+            <div class="d-form-item-inner d-form-item-label "><label>身份证号码</label></div>
+            <div class="d-form-item-inner"><input type="text" placeholder="18位身份证号码"></div>
+            <span>x</span>
+        </div>   
+        <div class="d-form-item d-form-item-p-115 d-border-b">
+            <div class="d-form-item-inner d-form-item-label d-form-item-w d-border-r"> 
+               <label class="d-txt-primary">中国 +86</label>
+            </div>
+            <div class="d-form-item-inner">
+                <input type="text" placeholder="请输入手机号码">
+            </div>
+            <span>x</span>                
+        </div>
+        <div class="d-form-item d-border-b">
+            <div class="d-form-item-inner d-form-item-label "><label>E-mail</label></div>
+            <div class="d-form-item-inner"><input type="text" placeholder="E-mail"></div>
+            <span>x</span>
+        </div> 
+        <div class="d-form-item d-border-b">
+            <div class="d-form-item-inner d-form-item-label "><label>Birth date</label></div>
+            <div class="d-form-item-inner"><input type="text" placeholder="Birth date"></div>
+            <span>x</span>
+        </div> 
+        <div class="d-form-item d-form-item-p-r-0 d-border-b">
+            <div class="d-form-item-inner d-radio-label">
+                <label class="d-radio">性别：</label>
+            </div>  
+            <div class="d-form-item-inner">
+                <label class="d-radio">男<input type="radio" name="radio"></label>
+                <label class="d-radio">女<input type="radio" checked="checked" name="radio"></label>
+            </div>   
+        </div>
+         <div class="d-form-item d-form-item-textarea d-border-b">
+            <div class="d-form-item-inner d-form-item-label"><label>详细地址</label></div>
+            <div class="d-form-item-inner"><textarea placeholder="街道等详细地址"></textarea></div>
+        </div>
+        <div class="d-form-footer d-border-b">
+                <button class="">取消</button>
+                <button class="" >确认</button>
+
+            </div>
+    </div>
+
+
+    <p>表单2</p>
+    <div class="d-form d-border-tb">
+        <div class="d-form-item d-border-b">
+            <div class="d-form-item-inner "><input type="text" placeholder="18位身份证号码"></div>
+             <!-- <div class="d-form-item-inner d-form-item-span"><span>x</span></div> -->
+        </div>
+        
+        <div class="d-form-item d-border-b">
+            <div class="d-form-item-inner"><input type="text" placeholder="18位身份证号码"></div>
+             <!-- <div class="d-form-item-inner d-form-item-span"><span>x</span></div> -->
+        </div>
+         <div class="d-form-item d-form-item-p-r-0 d-border-b">
+            <div class="d-form-item-inner"><input type="text" placeholder="请输入手机号码"></div>
+             <!-- <div class="d-form-item-inner d-form-item-span"><span>x</span></div> -->
+            <div class="d-form-item-inner d-form-item-inner1 d-form-item-w d-border-l"><button>确认发送</button></div>
+        </div>
+        <div class="d-form-item d-form-item-p-r-0 d-border-b">
+            <div class="d-form-item-inner d-radio-label">
+                <label class="d-radio">性别：</label>
+            </div>  
+            <div class="d-form-item-inner">
+                <label class="d-radio">男<input type="radio" name="radio1"></label>
+                <label class="d-radio">女<input type="radio" checked="checked" name="radio1"></label>
+            </div>   
+        </div>
+    </div>
+     <p>风格卡片</p>
+    <div class="container">
+        <div class="d-row">
+          <div class="d-col-md-3">
+               <div class="d-card-list d-border d-shadow-2" >
+                    <!-- <div class="d-card-image">
+                        <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div> -->
+                    <div  class="d-card-content" style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="d-card-header color-white no-border">旅途的山</div>
+                    <div class="d-card-content">
+                      <p class="d-txt-info">发表于 2015/01/15</p>
+                      <p>每一条css样式定义由两部分组成，形式如下： 选择器样式 在之前的部分就是“选择器”。 “选择器”指明了中的“样式”的作用对象，也就是“样式”作用于网页中的哪些元素</p>
+                    </div>
+                    <div class="d-card-footer d-border-t d-flex-box d-justify-content">                         
+                            <a href="#" class="link">赞</a>
+                            <a href="#" class="link">更多</a>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </div> 
+    <p>facebook卡片</p>
+    <div class="d-container-fluid">
+                   <div class="d-card-list d-border d-shadow-2" >
+                      <div class="d-flex-box d-card-content">                        
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">                    
+                           <div class="d-margin-l-10">
+                                <p>夜萧</p>
+                                <p class="d-txt-info">星期一 3:47pm</p>
+                           </div>
+                      </div>
+                      <div class="d-card-image">
+                           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                      </div>
+                      <div class="d-card-footer d-flex-box d-justify-content">                         
+                        <a href="javascript:void(0)">赞</a>
+                        <a href="javascript:void(0)">评论</a>
+                        <a href="javascript:void(0)">分享</a>
+                      </div>
+                     </div>
+              </div>   
+<p>组合卡片</p>
+<div class="d-container-fluid">
+               <div class="d-card-list d-border d-shadow-2" >
+                  <div class="d-flex-box d-card-content">
+                    <div class="">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">
+                    </div>
+                    <div class="d-margin-l-10">
+                        <p>夜萧</p>
+                        <p class="d-txt-info">星期一 3:47pm</p>
+                    </div>
+                    
+                  </div>
+                  <div class="d-flex-box">
+                       <div class="d-card-image">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div>
+                    <div class="d-card-image d-margin-lr-2">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div>
+                     <div class="d-card-image">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div>
+                  </div>
+                 
+                    <div class="d-card-footer d-flex-box d-justify-content">                         
+                            <a href="javascript:void(0)">赞</a>
+                            <a href="javascript:void(0)">评论</a>
+                            <a href="javascript:void(0)">分享</a>
+                    </div>
+        </div>
+</div> 
+
+<p>组合卡片</p>
+<div class="d-container-fluid">
+               <div class="d-card-list d-border d-shadow-2" >
+                  <div class="d-flex-box d-card-content">
+                    <div class="">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-50">
+                    </div>
+                    <div class="d-card-list-inner">
+                        <p>夜萧</p>
+                        <p class="d-txt-info">星期一 3:47pm</p>
+                    </div>
+                    
+                  </div>
+                  <div class="d-flex-box">
+                       <div class="d-card-image">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div>
+                    <div class="d-card-image d-margin-lr-10">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div>
+                     <div class="d-card-image">
+                       <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg">
+                    </div>
+                  </div>                
+                  <div class="d-card-footer d-flex-box d-justify-content">                         
+                        <a href="javascript:void(0)">赞</a>
+                        <a href="javascript:void(0)">评论</a>
+                        <a href="javascript:void(0)">分享</a>
+                  </div>
+        </div>
+    </div> 
+
+<div class="d-tab">
+    <ul class="d-tab-nav d-border-b">
+        <li class="current">热门推荐</li>
+        <li>全部表情</li>
+        <li>表情</li>
+    </ul>
+    <ul class="d-tab-content">
+        <li>内容1</li>
+        <li class="d-tab-content-hide">内容2</li>
+        <li class="d-tab-content-hide">内容3</li>
+    </ul>          
+</div>
+<p>图文列表</p>
+<ul class="d-list d-border-tb">
+   <li class="d-border-b">
+     <a class="d-txt-info d-flex d-flex-item-center">
+            <div class="d-flex d-flex-item-center">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+    
+            <div class="d-flex d-flex-item-center ">
+               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
+               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
+            </div>
+      
+          </a>
+   </li>
+    <li class="d-border-b">
+     <a class="d-txt-info d-flex d-flex-item-center">
+            <div class="d-flex d-flex-item-center">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+    
+            <div class="d-flex d-flex-item-center ">
+               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
+               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
+            </div>
+      
+          </a>
+   </li>
+    <li class="d-border-b">
+     <a class="d-txt-info d-flex d-flex-item-center">
+            <div class="d-flex d-flex-item-center">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+    
+            <div class="d-flex d-flex-item-center ">
+               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
+               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
+            </div>      
+          </a>
+   </li> 
+</ul>
+
+<!-- <ul class="d-list d-border-tb">
+  <a class="d-list-content d-txt-info">
+   <li class="d-border-b">
+        <div class="d-list-thumb">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+        </div>
+        <div class="d-list-info d-nowrap-multi">
+           <p class="">内容内容内容ya内容内容内容内容内容内容ya内容内容内容内容内容内容ya内容内容内容内容内容内容ya内容内容内容内容内容内容</p>
+        </div>
+   </li>
+   </a>
+   <a class="d-list-content d-txt-info">
+       <li class="d-border-b">
+            <div class="d-list-thumb">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+            <div class="d-list-info">
+               <p class="">内容内容内容内容内容内容内容内容内容ya内容内容内容内容内容内容</p>
+            </div>  
+       </li>
+    </a>
+    <a class="d-list-content d-txt-info">
+       <li>
+            <div class="d-list-thumb">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+            </div>
+            <div class="d-list-info">
+               <p>内容内容内容内容内容内容内容内容内容内容内容内容内</p>
+            </div>
+       </li>
+    </a>
+</ul> -->
+<!-- <p>标题栏</p>
+<header class="d-nav d-nav-t">
+    <a class="d-flex-col-50 d-text-align-l d-padding-l-10" >
+      <span class="icon icon-left"><</span>
+      返回
+    </a>
+     <h1 class="d-nav-item d-text-align-c">内容内容内</h1>
+    <a class="d-flex-col-50 d-text-align-r d-padding-r-10">
+      下一步
+      <span class="icon icon-right">></span>
+    </a>
+   
+</header> -->
+<p>标题栏</p>
+<header class="d-nav d-nav-t">
+    <a class="d-flex-col-50 d-text-align-l d-padding-l-10" >
+      <span><</span>
+      返回
+    </a> 
+     <h1 class="d-nav-item d-text-align-c">内容内容内</h1>
+    <a class="d-flex-col-50 d-text-align-r d-padding-r-10 d-header-inner d-flex d-justify-content-end">
+       <button class="">回首页</button>
+    </a>   
+</header>
+
+
+
+
+<!-- <header class="d-nav d-nav-t">
+     <h1 class="text-align-r d-flex-col-33"><</h1>
+     <h1 class="d-nav-item text-align-c current">热门</h1>
+    <h1 class="d-nav-item text-align-c">附近</h1>
+    <h1 class="d-nav-item text-align-c">娱乐</h1>
+    <h1 class="d-nav-item text-align-c">头条</h1>
+
+   
+</header> -->
+<p>底部工具栏</p>
+<header class="d-nav d-nav-b">
+    <a class="d-nav-b-items" >
+     
+      <span ><img src="../icon/d-home.png" class="d-width-20"></span>   
+       <span class="d-txt-tips d-margin-t-5">首页</span>  
+    </a>   
+    <a class="d-nav-b-items">
+      <span ><img src="../icon/d-star.png" class="d-width-20"></span>   
+       <span class="d-txt-tips d-margin-t-5">收藏</span>    
+    </a>
+    <a class="d-nav-b-items d-nav-r">
+      <span ><img src="../icon/d-car.png" class="d-width-20"></span>   
+      <span class="d-txt-tips d-margin-t-5">购物车</span>   
+      <span class="d-nav-badge">99</span>
+    </a>
+    <a class="d-nav-b-items">
+      <span ><img src="../icon/d-people.png" class="d-width-20"></span>   
+       <span class="d-txt-tips d-margin-t-5">我的</span>  
+    </a>
+</header>
+
+
+<p>图文列表3</p>
+<ul class="d-list d-border-tb">
+   <li class="d-border-b">
+        <a class="d-list-content d-txt-info">
+            <div class="d-list-thumb">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-80">
+            </div>
+            <div class="d-list-info d-flex-col-90">
+               <h1>标题1</h1>
+               <h3>标题2</h3>
+               <p class="d-list-txt d-nowrap-multi">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+            </div>
+        </a>
+         <div class="d-flex d-flex-item-center">
+           <div class="d-flex d-flex-item-center">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-25">
+               <span class="d-margin-l-10 d-txt-tips d-txt-info">城不二</span>
+           </div>
+           <div class="d-margin-r-10 d-txt-tips d-txt-info">点赞数</div>
+       </div>
+   </li>
+    <li class="d-border-b">
+        <a class="d-list-content d-txt-info">
+            <div class="d-list-thumb">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-80">
+            </div>
+            <div class="d-list-info d-flex-col-90">
+               <h1>标题1</h1>
+               <h3>标题2</h3>
+               <p class="d-list-txt d-nowrap-multi">哈哈妞儿儿就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻</p>
+            </div>   
+        </a>
+   </li>
+    <li class="d-border-b">
+    <a class="d-list-content d-txt-info">
+        <div class="d-list-thumb">
+             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-80">
+        </div>
+        <div class="d-list-info d-flex-col-90">
+           <h1>标题1</h1>
+           <h3>标题2</h3>
+           <p class="d-list-txt d-nowrap-multi">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+        </div>
+    </a>
+   </li>   
+</ul>
+
+
+<p>图文列表5</p>
+<ul class="d-list d-border-tb">
+   <li class="d-border-b">
+        <div class="d-list-txt">
+            <p>不二的不二</p>
+            <p class="d-txt-info">星期一 3:47pm</p>
+            <p class="d-txt-tips">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+        </div>
+        <div class="d-row">
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           
+        </div>
+
+   </li>
+    <li class="d-border-b">
+        <div class="d-list-txt">
+            <p>不二的不二</p>
+            <p class="d-txt-info">星期一 3:47pm</p>
+        </div>
+        <div class="d-row">
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           <div class="d-col-xs-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           </div>
+           
+        </div>
+
+   </li>
+   <li class="d-border-b d-list-items">
+      <div class="d-row">
+        <div class="d-col-xs-4">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+        </div>
+        <div class="d-col-xs-8">
+           <h1>标题1</h1>
+           <h3>标题2</h3>
+           <p class="d-list-txt d-list-txt-clamp-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+        </div>
+      </div>
+   </li>
+   <li class="d-border-b d-list-items">
+      <div class="d-row">
+        <div class="d-col-xs-4">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+        </div>
+        <div class="d-col-xs-8">
+           <h1>标题1</h1>
+           <h3>标题2</h3>
+           <p class="d-list-txt d-list-txt-clamp-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+        </div>
+      </div>
+   </li>
+    
+</ul>
+
+
+<p>图文列表6</p>
+<ul class="d-list d-border-tb">
+   <li class="d-border-b ">
+       <div class="d-list-items">
+          <div class="d-row">
+            <div class="d-col-xs-4">
+                     <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+            </div>
+            <div class="d-col-xs-8">
+               <h1>标题1</h1>
+               <h3>标题2</h3>
+               <p class="d-list-txt d-list-txt-clamp-2">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+            </div>
+          </div>
+          <div></div>
+       </div>
+       <div class="d-flex d-flex-item-center  d-margin-t-10">
+           <div class="d-flex d-flex-item-center">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-30">
+               <span class="d-margin-l-10 d-txt-tips d-txt-info">城不二</span>
+           </div>
+           <div class="d-margin-r-10 d-txt-tips d-txt-info">点赞数</div>
+       </div>
+   </li>
+   <li class="d-border-b d-list-items">
+      <div class="d-row">
+        <div class="d-col-xs-4">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+        </div>
+        <div class="d-col-xs-8">
+           <h1>标题1</h1>
+           <h3>标题2</h3>
+           <p class="d-list-txt d-list-txt-clamp-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+        </div>
+      </div>
+      </div>
+
+   </li>
+    
+</ul>
+
+
+
+<!-- <div class="d-row">
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div>
+  <div class="d-col-xs-1">.d-col-xs-1</div>
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div>
+  <div class="d-col-xs-1">.d-col-xs-1</div>
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div> 
+  <div class="d-col-xs-1">.d-col-xs-1</div>
+</div>
+<div class="d-row">
+  <div class="d-col-xs-8">.d-col-xs-8</div>
+  <div class="d-col-xs-4">.d-col-xs-4</div>
+</div>
+<div class="d-row">
+  <div class="d-col-xs-4">.d-col-xs-4</div>
+  <div class="d-col-xs-4">.d-col-xs-4</div>
+  <div class="d-col-xs-4">.d-col-xs-4</div>
+</div>
+<div class="d-row">
+  <div class="d-col-xs-6">.d-col-xs-6</div>
+  <div class="d-col-xs-6">.d-col-xs-6</div>
+</div>
+
+
+<section class="d-grid d-margin-b-15">
+    <div class="d-row">
+        <div class="d-col-xs-4">
+            <div class="d-badge">88</div>
+            <div><img src="../icon/d-rArrow.png"></div>
+            <div class="d-grid-label">首页</div>
+        </div>
+        <div class="d-col-xs-4">
+            <i class="d-iconfont d-icon-gear"></i>
+            <div class="d-grid-label">设置</div>
+        </div>
+        <div class="d-col-xs-4">
+            <i class="d-iconfont d-icon-map"></i>
+            <div class="d-grid-label">地图</div>
+        </div>
+        <div class="d-col-xs-4">
+            <i class="d-iconfont d-icon-calendar"></i>
+            <div class="d-grid-label">日历</div>
+        </div>
+        <div class="d-col-xs-4">
+            <div class="d-badge"></div>
+            <i class="d-iconfont d-icon-date"></i>
+            <div class="d-grid-label">日期</div>
+        </div>
+        <div class="d-col-xs-4">
+            <div class="d-dot"></div>
+            <i class="d-iconfont d-icon-cart"></i>
+            <div class="d-grid-label">购物车</div>
+        </div>
+    </div>
+</section>
+<section class="d-container-fluid">
+    <div class="d-row">
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-home"></i>
+            <div class="d-grid-label">首页</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-gear"></i>
+            <div class="d-grid-label">设置</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-map"></i>
+            <div class="d-grid-label">地图</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-calendar"></i>
+            <div class="d-grid-label">日历</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-date"></i>
+            <div class="d-grid-label">日期</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-cart"></i>
+            <div class="d-grid-label">购物车</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-paper"></i>
+            <div class="d-grid-label">发现</div>
+        </div>
+        <div class="d-col-xs-3">
+            <i class="d-iconfont d-icon-video"></i>
+            <div class="d-grid-label">视频</div>
+        </div>
+    </div>
+  <script type="text/javascript">
+      var disalog_=document.getElementById('d-dialog');
+      var close_1=document.getElementsByClassName('close');
+          for(var i=0;i<close_1.length;i++){
+            close_1[i].onclick=function(){
+                disalog_.style.display='none';
+            }
+          }
+       $search_input=document.getElementById('search-input');
+        var searchBar = document.querySelector(".cancel");
+        $search_input.onclick=function () {
+            searchBar.style.marginRight=10+'px';
+        }
+        searchBar.onclick=function(){
+            this.style.marginRight = "-"+this.offsetWidth+"px";
+            document.getElementById("search-input").value = '';
+            document.getElementById("search-input").blur();
+        }
+        var tab_nav_li=document.getElementsByClassName("d-tab-nav")[0].getElementsByTagName("li");
+        var tab_content_li=document.getElementsByClassName("d-tab-content")[0].getElementsByTagName("li");
+        for(var i=0;i<tab_nav_li.length;i++){
+            (function(i){
+               tab_nav_li[i].onclick=function(){
+               
+                 tab_content_li[i].className='';
+                 console.log(tab_content_li[0]);
+               }
+            })(i);
+        }
+    
+  </script>                 -->
+</body>
+</html>

@@ -1,0 +1,145 @@
+/*
+按钮
+*/
+.d-btn,
+.d-btn-s,
+.d-btn-lg,
+.d-btn-primary {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0 0.55rem;
+  min-width: 2.75rem;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  background-color: #fdfdfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
+  color: #00a5e0;
+  -webkit-box-sizing: border-box;
+  background-clip: padding-box;
+  border: 1px solid #cacccd;
+  border-radius: 3px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .d-btn,
+  .d-btn-s,
+  .d-btn-lg,
+  .d-btn-primary {
+    position: relative;
+    border: 0;
+  }
+  .d-btn:before,
+  .d-btn-s:before,
+  .d-btn-lg:before,
+  .d-btn-primary:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #cacccd;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    padding: 1px;
+    -webkit-box-sizing: border-box;
+    border-radius: 6px;
+    pointer-events: none;
+  }
+}
+.d-btn:after {
+  content: "";
+  position: absolute;
+  top: -$btn-hot-area;
+  bottom: -$btn-hot-area;
+  left: 0;
+  right: 0;
+}
+.d-btn.disabled,
+.d-btn:disabled {
+  border: 0;
+  color: #ccc;
+  background: #e9ebec;
+  background-clip: padding-box;
+}
+.d-btn-wrap {
+  padding: 15px 10px;
+}
+@media (max-width: 320px) {
+  .d-btn-wrap {
+    padding: 10px;
+  }
+}
+.d-btn-s {
+  padding: 0;
+  width: 55px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+}
+.d-btn-lg {
+  font-size: 18px;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.d-btn-lg:not(.disabled):not(:disabled):active,
+.d-btn-lg.active,
+.d-btn-s:not(.disabled):not(:disabled):active,
+.d-btn-s.active,
+.d-btn:active {
+  background-clip: padding-box;
+  background: #f2f2f2;
+  color: rgba(0,165,224,0.5);
+}
+.d-btn-primary {
+  background-color: #18b4ed;
+  color: #fff;
+  border-color: #0baae4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+  background-clip: padding-box;
+}
+.d-btn-primary:not(.disabled):not(:disabled):active,
+.d-btn-primary.active {
+  background-color: #1ca7da;
+  color: rgba(255,255,255,0.5);
+  border-color: #1ca7da;
+  background-clip: padding-box;
+}
+.d-btn-danger {
+  background-color: #f75549;
+  color: #fff;
+  border-color: #f43d30;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
+  background-clip: padding-box;
+}
+.d-btn-danger:not(.disabled):not(:disabled):active,
+.d-btn-danger.active {
+  background-color: #e2574d;
+  color: rgba(255,255,255,0.5);
+  border-color: #e2574d;
+  background-clip: padding-box;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .d-btn-primary:before {
+    border: 1px solid #0baae4;
+  }
+  .d-btn-danger:before {
+    border: 1px solid #f43d30;
+  }
+  .d-btn {
+    border: 0;
+  }
+  .d-btn.disabled,
+  .d-btn:disabled,
+  .d-btn.disabled:before,
+  .d-btn:disabled:before {
+    border: 1px solid #e9ebec;
+  }
+  .d-btn-lg:before {
+    border-radius: 10px;
+  }
+}
