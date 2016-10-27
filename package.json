@@ -1,0 +1,23 @@
+{
+  "name": "d-ui",
+  "version": "1.0.0",
+  "description": "<div class=\"box\" style=\"position: fixed;\r     height: 40px;\r     line-height: 20px;\">\r <a href=\"#btn\" style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">按钮</a>\r <a href=\"#border\" style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin: 5px;\">边框</a>\r <a href=\"#avatar\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">头像</a>\r <a href=\"#card\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">卡片</a>\r <a href=\"#label\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">标签</a>\r <a href=\"#progress\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">进度条</a>\r <a href=\"#header\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">标题栏</a>\r <a href=\"#header-b\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">底部工具栏</a>\r <a href=\"#list\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">列表</a>\r <a href=\"#tag\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">角标</a>\r <a href=\"#shadow\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">阴影</a>\r <a href=\"#search\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">搜索框</a>\r     <br>\r <a href=\"#loading\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">loading</a>\r <a href=\"#dialog\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">dialog</a>\r <a href=\"#form\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">表单</a>\r <a href=\"#nowrap\"style=\"padding: 10px;\r     border: 1px solid;\r     display: inline-block;\r     margin-right: 10px;\">文字截断</a>\r <a href=\"#justify\"style=\"padding: 10px;\r border: 1px solid;\r display: inline-block;\r margin-right: 10px;\">两端对齐</a>\r <a href=\"#placehold\"style=\"padding: 10px;\r border: 1px solid;\r display: inline-block;\r margin-right: 10px;\">占位符</a>\r <a href=\"#tab\"style=\"padding: 10px;\r border: 1px solid;\r display: inline-block;\r margin-right: 10px;\">标签页</a>\r <a href=\"#grid\"style=\"padding: 10px;\r border: 1px solid;\r display: inline-block;\r margin-right: 10px;\">栅格</a>\r <a href=\"#txt\"style=\"padding: 10px;\r border: 1px solid;\r display: inline-block;\r margin-right: 10px;\">文本样式</a>\r </div>\r <div style=\"margin-top:150px\"></div>\r ####按钮\r <div id=\"btn\"></div>\r  尺寸:可以通过给button加上类d-btn(常规按钮),d-btn-s(小按钮),d-btn-lg(大按钮)\r  颜色:可以通过给button加上类d-btn-primary,d-btn-danger\r  ![sss](./img/btn.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Alisaoll@github.com/Alisaoll/d-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisaoll/d-ui/issues"
+  },
+  "homepage": "https://github.com/Alisaoll/d-ui#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0"
+  }
+}

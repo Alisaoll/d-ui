@@ -7,6 +7,7 @@ _btn($btn-bg-color,$color,$btn-border-color){
 //处理栅格类
 $array =0 1 2 3 4 5 6 7 8 9 10 11 12;
 $a = 100%/12;
+$b = 100vw/12;
 _col($type,$i,$attr){
     for $i in $array{
         if($attr=='width'){
@@ -32,6 +33,13 @@ _col($type,$i,$attr){
         }
         
     }
+}
+_col_height($i){
+      for $i in $array{
+        .d-col-height-{$i}{
+           height:$i*$b;
+        }
+      }
 }
 _label_($color,$background_color){
        color: $color;
