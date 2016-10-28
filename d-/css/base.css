@@ -72,7 +72,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+button {
   margin: 0;
   border: 0;
   padding: 0;
@@ -234,11 +235,12 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.d-card-footer {
+  padding: 0 0.75rem !important;
+  line-height: 2.2rem;
+}
 .d-card-content-img {
   padding: 0 !important;
-}
-.d-card-list p {
-  margin-bottom: 0.4rem;
 }
 .d-card-list .d-card-list-inner {
   margin-left: 0.5rem;
@@ -467,6 +469,8 @@ h6,
 }
 .d-flex {
   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
@@ -1250,10 +1254,32 @@ h6,
   padding: 0 0.15rem;
   line-height: 0.8rem;
 }
+.d-nav-btn {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  background-color: #18b4ed;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+}
 .d-nav-btn button {
+  line-height: 1.3rem;
+  min-width: 2.75rem;
+  text-align: center;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  background-clip: padding-box;
+  position: relative;
   background-color: #18b4ed !important;
   color: #fdfdfd !important;
-  border-radius: 0;
   border: 1px solid #fff;
 }
 .d-nav-r {
@@ -2345,4 +2371,7 @@ h6,
 .d-scale-down {
   object-fit: scale-down;
   height: 100%;
+}
+.d-position-a {
+  position: absolute;
 }

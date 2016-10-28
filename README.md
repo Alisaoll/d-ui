@@ -157,16 +157,16 @@ margin-right: 10px;">文本样式</a>
 ####简单卡片
 ![](./img/card1.png)
 ````html
-<div class="d-container">
+<div class="container">
     <div class="d-row">
       <div class="d-col-md-3">
-           <div class="d-card-list d-border d-shadow-2" >
-                <div class="d-card-content">一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出长度省略，内容一行文字超出长度省略</div>
-                <div class="d-card-footer d-border-t"><p>图片底部</p></div>
+           <div class="d-card-list d-border d-shadow-1" >
+                <div class="d-card-content">一一行文字超出长度省略，内容一行文字超出长度省略，内容一一行文字超出出长度省略，内容一行文字超出长度省略，内容</div>
+                <div class="d-card-footer d-border-t d-text-align-c"><p>图片底部</p></div>
            </div>
        </div>
     </div>
-</div> 
+</div>  
 ````
 ###风格卡片
 .d-txt-info 修饰字体的颜色为 #777
@@ -365,26 +365,25 @@ margin-right: 10px;">文本样式</a>
 ````html
 <header class="d-nav d-nav-b">
     <a class="d-nav-b-items" >
-      <span >返回</span>  
-      <span >返回</span>   
+     
+      <i class="iconfont icon-shouye-copy"></i>   
+       <span class="d-txt-tips">首页</span>  
     </a>   
     <a class="d-nav-b-items">
-      <span >返回</span> 
-      <span >返回</span>  
+     <i class="iconfont icon-shoucang"></i>   
+       <span class="d-txt-tips">收藏</span>    
+    </a>
+    <a class="d-nav-b-items d-nav-r">
+      <i class="iconfont icon-gouwuche"></i> 
+      <span class="d-txt-tips">购物车</span>   
+      <span class="d-nav-badge">99</span>
     </a>
     <a class="d-nav-b-items">
-      <span >返回</span> 
-      <span >返回</span>  
+       <i class="iconfont icon-wode"></i>   
+       <span class="d-txt-tips">我的</span>  
     </a>
-    <a class="d-nav-b-items">
-      <span >返回</span> 
-      <span >返回</span>  
-    </a>
-    <a class="d-nav-b-items">
-      <span >返回</span> 
-      <span >返回</span>  
-    </a>   
 </header>
+
 ````
 ####列表一
 <div id="list"></div>
@@ -449,17 +448,18 @@ margin-right: 10px;">文本样式</a>
             <p class="d-txt-tips">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
         </div>
         <div class="d-row">
-           <div class="d-col-xs-4">
-               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="../img/856829.jpg" class="d-cover">
            </div>
-           <div class="d-col-xs-4">
-               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"  class="d-cover">
            </div>
-           <div class="d-col-xs-4">
-               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"  class="d-cover">
            </div>
            
         </div>
+
    </li>
     <li class="d-border-b">
         <div class="d-list-txt">
@@ -467,17 +467,27 @@ margin-right: 10px;">文本样式</a>
             <p class="d-txt-info">星期一 3:47pm</p>
         </div>
         <div class="d-row">
-           <div class="d-col-xs-4">
-               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-cover">
            </div>
-           <div class="d-col-xs-4">
-               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-cover">
            </div>
-           <div class="d-col-xs-4">
-               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="../img/856829.jpg" class="d-cover">
+           </div>
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-cover">
+           </div>
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-cover">
+           </div>
+           <div class="d-col-xs-4 d-col-height-4">
+               <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-cover">
            </div>
            
         </div>
+
    </li>
    <li class="d-border-b d-list-items">
       <div class="d-row">
@@ -486,11 +496,24 @@ margin-right: 10px;">文本样式</a>
         </div>
         <div class="d-col-xs-8">
            <h1>标题1</h1>
-           <h3>标题2</h3>
-           <p class="d-list-txt d-nowrap-multi-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+      
+           <p class="d-list-txt d-list-txt-clamp-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
         </div>
       </div>
    </li>
+   <li class="d-border-b d-list-items">
+      <div class="d-row">
+        <div class="d-col-xs-4">
+                 <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-s-100">
+        </div>
+        <div class="d-col-xs-8">
+           <h1>标题1</h1>
+        
+           <p class="d-list-txt d-list-txt-clamp-3">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+        </div>
+      </div>
+   </li>
+    
 </ul>
 ````
 ####图文列表
@@ -499,34 +522,37 @@ margin-right: 10px;">文本样式</a>
 <ul class="d-list d-border-tb">
    <li class="d-border-b">
      <a class="d-txt-info d-flex d-flex-item-center">
-            <div class="d-flex d-flex-item-center">
-             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
-            </div>
-    
-            <div class="d-flex d-flex-item-center ">
-               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
-               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
-               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
-            </div>
-      
-          </a>
+        <div>
+           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+        </div>
+           <div class="d-list-txt d-nowrap-multi d-flex-col-90 d-margin-lr-10">
+           哈哈哈哈哈哈哈哈哈哈就顶顶大傻妞儿儿</div>
+              <i class="iconfont icon-enter"></i>      
+       </a>
    </li>
-    <li class="d-border-b">
+   <li class="d-border-b">
      <a class="d-txt-info d-flex d-flex-item-center">
-            <div class="d-flex d-flex-item-center">
-             <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
-            </div>
-    
-            <div class="d-flex d-flex-item-center ">
-               <p class="d-list-txt d-nowrap-multi d-margin-lr-10">
-               哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
-               <div class="d-flex d-flex-item-center"><img src="../icon/d-rArrow.png" class="d-width-8"></div>
-            </div>
-      
-          </a>
+        <div>
+         <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+        </div>
+           <div class="d-list-txt d-nowrap-multi d-flex-col-90 d-margin-lr-10">
+           哈哈哈哈哈哈哈哈哈哈就顶顶大傻妞儿儿哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶</div>
+              <i class="iconfont icon-enter"></i>      
+      </a>
+   </li>
+   <li class="d-border-b">
+      <a class="d-txt-info d-flex d-flex-item-center">
+          <div>
+           <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" class="d-avatar-50">
+          </div>
+             <div class="d-list-txt d-nowrap-multi d-flex-col-90 d-margin-lr-10">
+             哈哈哈哈哈哈哈哈哈哈就顶顶大傻妞儿儿哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶</div>
+                <i class="iconfont icon-enter"></i>      
+        </a>
    </li>
 </ul>
 ````
+
 ####角标
 <div id="tag"></div>
 .d-tag-b-l 设置角标位置在左下角

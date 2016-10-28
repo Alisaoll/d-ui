@@ -78,3 +78,6 @@
   object-fit: scale-down;
   height: 100%;
 }
+.d-position-a {
+  position: absolute;
+}

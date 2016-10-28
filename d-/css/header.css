@@ -84,10 +84,32 @@
   padding: 0 0.15rem;
   line-height: 0.8rem;
 }
+.d-nav-btn {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  background-color: #18b4ed;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+}
 .d-nav-btn button {
+  line-height: 1.3rem;
+  min-width: 2.75rem;
+  text-align: center;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  background-clip: padding-box;
+  position: relative;
   background-color: #18b4ed !important;
   color: #fdfdfd !important;
-  border-radius: 0;
   border: 1px solid #fff;
 }
 .d-nav-r {
@@ -105,7 +127,6 @@
 .d-btn-nav-img {
   position: absolute;
   left: 10px;
-  
 }
 .d-nav-btn button:active {
   background-color: #fdfdfd !important;
