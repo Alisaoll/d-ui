@@ -19,6 +19,9 @@
 .d-margin-l-10 {
   margin-left: 0.5rem;
 }
+.d-margin-l-2-half {
+  margin-left: 0.125rem;
+}
 .d-margin-r-10 {
   margin-right: 0.5rem;
 }
@@ -80,4 +83,7 @@
 }
 .d-position-a {
   position: absolute;
+}
+.d-line-h {
+  line-height: 1.45rem;
 }

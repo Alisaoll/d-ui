@@ -13,6 +13,9 @@
   display: -webkit-flex;
   display: flex;
 }
+.d-align-items-c {
+  align-items: center;
+}
 .d-justify-content {
   -webkit-justify-content: space-between;
   justify-content: space-between;
@@ -47,21 +50,27 @@
 }
 .d-flex-pack-start {
   -webkit-box-pack: start;
+  box-pack: start;
 }
 .d-flex-pack-end {
   -webkit-box-pack: end;
+  box-pack: end;
 }
 .d-flex-pack-center {
   -webkit-box-pack: center;
+  box-pack: center;
 }
 .d-flex-align-start {
   -webkit-box-align: start;
+  box-align: center;
 }
 .d-flex-align-end {
   -webkit-box-align: end;
+  box-align: end;
 }
 .d-flex-align-center {
   -webkit-box-align: center;
+  box-align: center;
 }
 .d-flex-row {
   display: block;

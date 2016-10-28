@@ -1,6 +1,6 @@
 
 @font-face {font-family: "iconfont";
-  src:url('iconfont.ttf?t=1477560562') format('truetype'); /* iOS 4.1- */
+  src: url('iconfont.ttf?t=1477644241194') format('truetype'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -11,17 +11,38 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-guanbi:before { content: "\e60e"; }
+
 .icon-wode:before { content: "\e604"; }
+
 .icon-gouwuche:before { content: "\e605"; }
+
 .icon-shoucang:before { content: "\e606"; }
+
+.icon-faxian:before { content: "\e662"; }
+
+.icon-right:before { content: "\e623"; }
+
+.icon-ditu:before { content: "\e60f"; }
+
 .icon-shouye-copy:before { content: "\e607"; }
+
 .icon-return:before { content: "\e602"; }
+
 .icon-enter:before { content: "\e603"; }
+
 .icon-like:before { content: "\e608"; }
+
 .icon-comment:before { content: "\e609"; }
+
 .icon-share:before { content: "\e60a"; }
+
 .icon-del:before { content: "\e60b"; }
+
 .icon-upward:before { content: "\e60c"; }
+
 .icon-shezhi:before { content: "\e60d"; }
+
 .icon-comment-w:before { content: "\e601"; }
-.icon-close:before { content: "\e600"; }
+

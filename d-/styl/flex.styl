@@ -8,9 +8,6 @@
   display: flex; 
 }
 .{$pf}flex{
-  // display: -webkit-box;
-  // display: -webkit-flex; 
-  // display: flex; 
     display:-webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -18,6 +15,9 @@
     display: flex; 
 }
 
+.{$pf}align-items-c{
+    align-items:center;
+}
 
 .{$pf}justify-content{
   -webkit-justify-content:space-between;
@@ -53,21 +53,30 @@
 }
 .{$pf}flex-pack-start{
       -webkit-box-pack: start;
+      box-pack:start;
 }
 .{$pf}flex-pack-end{
       -webkit-box-pack: end;
+      box-pack:end;
 }
 .{$pf}flex-pack-center{
       -webkit-box-pack: center;
+      box-pack:center;
 }
 .{$pf}flex-align-start {
-  -webkit-box-align: start; }
+  -webkit-box-align: start;
+  box-align:center;
+ }
 
 .{$pf}flex-align-end {
-  -webkit-box-align: end; }
+  -webkit-box-align: end; 
+  box-align: end; 
+ }
 
 .{$pf}flex-align-center {
-  -webkit-box-align: center; }
+  -webkit-box-align: center;
+  box-align: center;
+   }
 
 
 .{$pf}flex-row {

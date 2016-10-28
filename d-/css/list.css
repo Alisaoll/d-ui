@@ -51,13 +51,15 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  padding-bottom: 0.25rem;
+  padding-left: 0.125rem;
 }
 .d-list-txt-clamp-2 {
   -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 .d-list-txt-clamp-3 {
   -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 .d-list li:active {
   background-color: #eee;
