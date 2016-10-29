@@ -552,7 +552,38 @@ margin-right: 10px;">文本样式</a>
    </li>
 </ul>
 ````
-
+####图文列表7
+![](./img/list4.png)
+````html
+<ul class="d-list d-border-tb">
+   <li class="d-border-b ">
+       <div class="d-list-items">
+          <div class="d-row">
+            <div class="d-col-xs-2">
+                     <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" >
+            </div>
+            <div class="d-col-xs-9 d-padding-l-10">
+               <h1  class="d-txt-info">城不二</h1>
+               <div class="d-txt-info"><span class="d-txt-tips">我的能力：</span>
+               <div class="d-label d-label-primary d-txt-tips">人权帮扶</div>
+               <div class="d-label d-label-success d-txt-tips">爱心帮扶</div>
+            
+               <p class="d-list-txt d-list-txt-clamp-2">哈哈就是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿是看到的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶大傻妞儿儿</p>
+               <div class="d-margin-t-10"><img src="../img/856829.jpg" class="d-flex-80"></div>
+               <div class="d-flex d-justify-content-end d-txt-10">
+                   <div><i class="iconfont icon-shoucang"></i><span class="d-margin-l-2-half">3小时前</span></div>
+                   <div class="d-margin-l-10"><i class="iconfont icon-shoucang"></i><span class="d-margin-l-2-half">6</span></div>
+                   <div class="d-margin-l-10"><i class="iconfont icon-shoucang"></i><span class="d-margin-l-2-half">3</span></div>
+                   <div class="d-margin-l-10"><i class="iconfont icon-shoucang"></i><span class="d-margin-l-2-half">0</span></div>
+                   <div class="d-margin-l-10 d-line-h">更多</div>
+               </div>
+            </div>
+          </div>
+          <div class="d-col-xs-1 d-txt-10 d-txt-info">全国</div>
+       </div>
+   </li>   
+</ul>
+````
 ####角标
 <div id="tag"></div>
 .d-tag-b-l 设置角标位置在左下角

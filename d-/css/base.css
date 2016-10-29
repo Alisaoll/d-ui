@@ -2304,6 +2304,11 @@ h6,
 .d-col-height-12 {
   height: 100vw;
 }
+.d-grid-link:active {
+  background-color: #fdfdfd;
+  width: 50%;
+  margin: 0 auto;
+}
 .d-text-align-c {
   text-align: center;
 }
