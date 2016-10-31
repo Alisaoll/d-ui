@@ -5,8 +5,6 @@
   height: 2.2rem;
   overflow: hidden;
   width: 100%;
-  background-color: #ebeced;
-  color: #9e9e9e;
   -webkit-backface-visibility: hidden; /*隐藏被旋转的 div 元素的背面：*/
   backface-visibility: hidden;
 }
@@ -30,6 +28,7 @@
   background: #fff;
   border: 0px;
   outline: none;
+  padding-left: 1rem;
 }
 .d-search .cancel {
   font-size: 0.7rem;

@@ -46,6 +46,9 @@
 .d-padding-r-10 {
   padding-right: 0.5rem;
 }
+.d-padding-lr-10 {
+  padding: 0 0.5rem;
+}
 .d-padding-l-10 {
   padding-left: 0.5rem;
 }
@@ -54,6 +57,21 @@
 }
 .d-padding-l-0 {
   padding-left: 0;
+}
+.d-padding-tb-20 {
+  padding: 1rem 0;
+}
+.d-padding-t-10 {
+  padding-top: 0.5rem;
+}
+.d-padding-t-20 {
+  padding-top: 1rem;
+}
+.d-padding-tb-5 {
+  padding: 0.25rem 0;
+}
+.d-padding-tb-10 {
+  padding: 0.5rem 0;
 }
 .d-width-8 {
   width: 8px !important;
@@ -84,6 +102,23 @@
 .d-position-a {
   position: absolute;
 }
+.d-position-r {
+  position: relative;
+}
 .d-line-h {
   line-height: 1.45rem;
+}
+.d-position-icon {
+  position: absolute;
+  top: 0px;
+  left: 0.5rem;
+  color: #666;
+}
+.d-margin-auto {
+  margin: 0 auto;
+}
+.d-position-more {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 31%;
 }

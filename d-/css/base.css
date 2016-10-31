@@ -29,7 +29,6 @@ body {
   line-height: 1.5;
   font-size: 0.8rem;
   color: #212121;
-  background-color: #f5f5f5;
   outline: 0;
 }
 html,
@@ -210,7 +209,6 @@ img {
     background-position: top, right, bottom, left;
     padding: 1px;
     -webkit-box-sizing: border-box;
-    z-index: 10;
     pointer-events: none;
   }
 }
@@ -878,8 +876,6 @@ h6,
   height: 2.2rem;
   overflow: hidden;
   width: 100%;
-  background-color: #ebeced;
-  color: #9e9e9e;
   -webkit-backface-visibility: hidden; /*隐藏被旋转的 div 元素的背面：*/
   backface-visibility: hidden;
 }
@@ -903,6 +899,7 @@ h6,
   background: #fff;
   border: 0px;
   outline: none;
+  padding-left: 1rem;
 }
 .d-search .cancel {
   font-size: 0.7rem;
@@ -1145,6 +1142,7 @@ h6,
 }
 .d-list li {
   padding: 0.25rem;
+  position: relative;
 }
 .d-list-info {
   padding-left: 0.55rem;
@@ -2357,6 +2355,9 @@ h6,
 .d-padding-r-10 {
   padding-right: 0.5rem;
 }
+.d-padding-lr-10 {
+  padding: 0 0.5rem;
+}
 .d-padding-l-10 {
   padding-left: 0.5rem;
 }
@@ -2365,6 +2366,21 @@ h6,
 }
 .d-padding-l-0 {
   padding-left: 0;
+}
+.d-padding-tb-20 {
+  padding: 1rem 0;
+}
+.d-padding-t-10 {
+  padding-top: 0.5rem;
+}
+.d-padding-t-20 {
+  padding-top: 1rem;
+}
+.d-padding-tb-5 {
+  padding: 0.25rem 0;
+}
+.d-padding-tb-10 {
+  padding: 0.5rem 0;
 }
 .d-width-8 {
   width: 8px !important;
@@ -2395,6 +2411,23 @@ h6,
 .d-position-a {
   position: absolute;
 }
+.d-position-r {
+  position: relative;
+}
 .d-line-h {
   line-height: 1.45rem;
+}
+.d-position-icon {
+  position: absolute;
+  top: 0px;
+  left: 0.5rem;
+  color: #666;
+}
+.d-margin-auto {
+  margin: 0 auto;
+}
+.d-position-more {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 31%;
 }

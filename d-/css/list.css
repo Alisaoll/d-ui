@@ -29,6 +29,7 @@
 }
 .d-list li {
   padding: 0.25rem;
+  position: relative;
 }
 .d-list-info {
   padding-left: 0.55rem;
