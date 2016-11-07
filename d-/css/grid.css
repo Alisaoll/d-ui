@@ -1,7 +1,7 @@
 /*基本容器*/
 .d-container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -66,8 +66,8 @@
 .d-col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 .d-col-xs-1,
 .d-col-xs-2,
@@ -849,6 +849,4 @@
 }
 .d-grid-link:active {
   background-color: #fdfdfd;
-  width: 50%;
-  margin: 0 auto;
 }

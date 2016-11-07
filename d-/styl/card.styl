@@ -3,10 +3,9 @@
 .{$pf}card-list{
 	position: relative;
     overflow: hidden;
-    margin: 0.5rem 0.5rem 1rem 0.5rem;
+    margin: $margin-10 $margin-10 $margin-20 $margin-10;
     background-color: #fff;
-    border-radius: 2px;
-  //  font-size 0.7rem !important;
+    border-radius:$boeder-r-2;
 }
 .{$pf}card-image img{
       width:100%;
@@ -14,218 +13,22 @@
 }
 .{$pf}card-list{
 	.{$pf}card-content,.{$pf}card-footer{
-		position: relative;
-	    min-height: 2.2rem;
-	    padding: 0.5rem 0.75rem;
+		  position: relative;
+	    min-height: $height-44;
+	    padding: $margin-10 $margin-15;
 	    -webkit-box-sizing: border-box;
 	    box-sizing: border-box;
 	  
 	}
 }
 .{$pf}card-footer{
-	 padding: 0 0.75rem !important;
-	  line-height 2.2rem;
+	   padding: 0 $margin-15 !important;
+	  line-height $height-44;
 }
 .{$pf}card-content-img{
-        padding:0 !important;
+    padding:0 !important;
 }
 
 .{$pf}card-list .{$pf}card-list-inner{
-	margin-left:0.5rem
+	margin-left:$margin-10;
 }
-
-// .{$pf}margin-lr-5{
-// 	margin:0 0.25rem
-// }
-// .{$pf}margin-lr-10{
-// 	margin:0 0.5rem
-// }
-// .{$pf}margin-t-50{
-// 	margin-top:2.5rem;
-// }
-
-
-
-// .{$pf}card-panel {
-//   transition: box-shadow .25s;
-//   padding: ${$pf}card-padding;
-//   margin: $element-top-margin 0 $element-bottom-margin 0;
-//   border-radius: 2px;
-//   @extend .z-depth-1;
-//   background-color: ${$pf}card-bg-color;
-// }
-
-// .{$pf}card {
-//   position: relative;
-//   margin: $element-top-margin 0 $element-bottom-margin 0;
-//   background-color: ${$pf}card-bg-color;
-//   transition: box-shadow .25s;
-//   border-radius: 2px;
-//   @extend .z-depth-1;
-
-
-//   .{$pf}card-title {
-//     font-size: 24px;
-//     font-weight: 300;
-//     &.activator {
-//       cursor: pointer;
-//     }
-//   }
-
-//   // {$pf}Card Sizes
-//   &.small, &.medium, &.large {
-//     position: relative;
-
-//     .{$pf}card-image {
-//       max-height: 60%;
-//       overflow: hidden;
-//     }
-//     .{$pf}card-image + .{$pf}card-content {
-//       max-height: 40%;
-//     }
-//     .{$pf}card-content {
-//       max-height: 100%;
-//       overflow: hidden;
-//     }
-//     .{$pf}card-action {
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       right: 0;
-//     }
-//   }
-
-//   &.small {
-//     height: 300px;
-//   }
-
-//   &.medium {
-//     height: 400px;
-//   }
-
-//   &.large {
-//     height: 500px;
-//   }
-
-//   // Horizontal {$pf}Cards
-//   &.horizontal {
-//     &.small, &.medium, &.large {
-//       .{$pf}card-image {
-//         height: 100%;
-//         max-height: none;
-//         overflow: visible;
-
-//         img {
-//           height: 100%;
-//         }
-//       }
-//     }
-
-//     display: flex;
-
-//     .{$pf}card-image {
-//       max-width: 50%;
-//       img {
-//         max-width: 100%;
-//         width: auto;
-//       }
-//     }
-
-//     .{$pf}card-stacked {
-//       display: flex;
-//       flex-direction: column;
-//       flex: 1;
-//       position: relative;
-
-//       .{$pf}card-content {
-//         flex-grow: 1;
-//       }
-//     }
-//   }
-
-//   // Sticky Action Section
-//   &.sticky-action {
-//     .{$pf}card-action {
-//       z-index: 2;
-//     }
-
-//     .{$pf}card-reveal {
-//       z-index: 1;
-//       padding-bottom: 64px;
-//     }
-//   }
-
-
-
-
-//   .{$pf}card-image {
-//     position: relative;
-
-//     // Image background for content
-//     img {
-//       display: block;
-//       border-radius: 2px 2px 0 0;
-//       position: relative;
-//       left: 0;
-//       right: 0;
-//       top: 0;
-//       bottom: 0;
-//       width: 100%;
-//     }
-
-//     .{$pf}card-title {
-//       color: ${$pf}card-bg-color;
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       padding: ${$pf}card-padding;
-//     }
-
-//   }
-
-//   .{$pf}card-content {
-//     padding: ${$pf}card-padding;
-//     border-radius: 0 0 2px 2px;
-
-//     p {
-//       margin: 0;
-//       color: inherit;
-//     }
-//     .{$pf}card-title {
-//       line-height: 48px;
-//     }
-//   }
-
-//   .{$pf}card-action {
-//     position: relative;
-//     background-color: inherit;
-//     border-top: 1px solid rgba(160,160,160,.2);
-//     padding: ${$pf}card-padding;
-
-//     a:not(.btn):not(.btn-large):not(.btn-floating) {
-//       color: ${$pf}card-link-color;
-//       margin-right: ${$pf}card-padding;
-//       transition: color .3s ease;
-//       text-transform: uppercase;
-
-//       &:hover { color: ${$pf}card-link-color-light; }
-//     }
-//   }
-
-//   .{$pf}card-reveal {
-//     padding: ${$pf}card-padding;
-//     position: absolute;
-//     background-color: ${$pf}card-bg-color;
-//     width: 100%;
-//     overflow-y: auto;
-//     top: 100%;
-//     height: 100%;
-//     z-index: 3;
-//     display: none;
-
-//     .{$pf}card-title {
-//       cursor: pointer;
-//       display: block;
-//     }
-//   }
-// }

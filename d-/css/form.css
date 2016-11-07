@@ -66,7 +66,7 @@
   color: #fff;
 }
 .d-form-item textarea {
-  height: 65px;
+  height: 3.25rem;
   font-size: 0.7rem;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -87,19 +87,19 @@
 }
 .d-radio input {
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: 1.3rem;
+  height: 1.3rem;
   position: relative;
   overflow: visible;
   border: 0;
   background: none;
   -webkit-appearance: none;
   outline: none;
-  margin-right: 8px;
+  margin-right: 0.4rem;
   vertical-align: middle;
 }
 .d-radio {
-  line-height: 25px;
+  line-height: 1.25rem;
   display: inline-block;
 }
 .d-radio-label {
@@ -107,44 +107,44 @@
 }
 .d-radio input {
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: 1.3rem;
+  height: 1.3rem;
   position: relative;
   overflow: visible;
   border: 0;
   background: none;
   -webkit-appearance: none;
   outline: none;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
   vertical-align: middle;
 }
 .d-radio input:before {
   content: '';
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 1.2rem;
+  height: 1.2rem;
   border: 1px solid #dfe0e1;
-  border-radius: 13px;
+  border-radius: 0.65rem;
   background-clip: padding-box;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 0;
 }
 .d-radio input:checked:after {
   content: '';
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 0.7rem;
+  height: 0.7rem;
   background: #18b4ed;
-  border-radius: 7px;
+  border-radius: 0.35rem;
   position: absolute;
-  left: 6px;
-  top: 6px;
+  left: 0.3rem;
+  top: 0.3rem;
 }
 .d-form-footer {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
   display: -webkit-box;
   width: 100%;
   box-sizing: border-box;

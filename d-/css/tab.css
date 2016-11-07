@@ -9,14 +9,14 @@
   display: flex;
   box-sizing: border-box;
   background-color: #fff;
-  height: 45px;
+  height: 2.25rem;
 }
 .d-tab-nav li {
   display-flex: 1;
   width: 100%;
   text-align: center;
-  height: 45px;
-  line-height: 45px;
+  height: 2.25rem;
+  line-height: 2.25rem;
 }
 .d-tab-nav .current {
   color: #00a5e0;

@@ -3,8 +3,8 @@
   background-color #fff;
 }
 .{$pf}form-item {
-    min-height: 2.2rem;
-    padding-right: 0.75rem;
+    min-height: $height-44;
+    padding-right:$margin-15;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -17,11 +17,11 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
     align-items: center;
-    font-size:0.7rem;
+    font-size:$font-size-14;
    }
   .{$pf}form-item-inner{
     width: 100%;
-    padding-left: 0.5rem;
+    padding-left: $margin-10;
     -webkit-box-flex: 1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -36,11 +36,11 @@
     width:50%;
   }
   .{$pf}form-item-w{
-        height 2.2rem;
-        line-height 2.2rem;
+        height $height-44;
+        line-height $height-44;
   }
   .{$pf}form-item-inner button{
-    height 2.2rem
+    height $height-44;
     color:#00a5e0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -59,22 +59,22 @@
     padding-left 0;
   }
     .{$pf}form-item span{
-        height: 1rem;
+        height: $height-20;
         display: block;
-        width: 1.6rem;
-        line-height: 0.9rem;
+        width: $width-32;
+        line-height: $height-18;
         text-align: center;
-        border-radius: 0.5rem;
+        border-radius: $boeder-r-10;
         background-color: #666;
         color: #fff;       
   }
   
   .{$pf}form-item textarea {
-    height: 65px;
-    font-size 0.7rem;
+    height: $height-65;
+    font-size:$font-size-14;
     box-sizing: border-box;
     -webkit-appearance: none;
-    padding-top: 1.2rem;
+    padding-top: $margin-24;
    
   }
   .{$pf}form-item-span{
@@ -84,7 +84,7 @@
     width:33%;
   }
   .{$pf}form-item-span span{
-    width:1rem;
+    width:$width-20;
   }
   .{$pf}form-item input,.{$pf}form-item textarea{
     width:100%;
@@ -92,19 +92,19 @@
 //radio
 .{$pf}radio input {
     display: inline-block;
-    width: 26px;
-    height: 26px;
+    width: $width-26;
+    height: $height-26;
     position: relative;
     overflow: visible;
     border: 0;
     background: none;
     -webkit-appearance: none;
     outline: none;
-    margin-right: 8px;
+    margin-right: $margin-8;
     vertical-align: middle;
     }
 .{$pf}radio {
-  line-height: 25px;
+  line-height:$height-25;
   display: inline-block; }
 .{$pf}radio-label{
   width:20%;
@@ -112,57 +112,57 @@
 
 .{$pf}radio input {
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: $width-26;
+  height: $height-26;
   position: relative;
   overflow: visible;
   border: 0;
   background: none;
   -webkit-appearance: none;
   outline: none;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: $margin-8;
+  margin-left:$margin-8;
   vertical-align: middle; }
 
 .{$pf}radio input:before {
   content: '';
   display: block;
-  width: 24px;
-  height: 24px;
+  width: $width-24;
+  height: $height-24;
   border: 1px solid #dfe0e1;
-  border-radius: 13px;
+  border-radius: $boeder-r-13;
   background-clip: padding-box;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 0; }
 
 .{$pf}radio input:checked:after {
   content: '';
   display: block;
-  width: 14px;
-  height: 14px;
+  width: $height-14;
+  height: $height-14;
   background: #18b4ed;
-  border-radius: 7px;
+  border-radius: $boeder-r-7;
   position: absolute;
-  left: 6px;
-  top: 6px; }
+  left: $left-6;
+  top: $top-6; }
   
   .{$pf}form-footer {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: $boeder-r-6;
+  border-bottom-right-radius: $boeder-r-6;
   display: -webkit-box;
   width: 100%;
   box-sizing: border-box;
   -webkit-box-align: center;
-  height: 2.1rem;
-  line-height: 2.1rem;
+  height: $height-42;
+  line-height: $height-42;
 }
 .{$pf}form-footer button {
   color: #00a5e0;
   text-align: center;
   border: 0;
   width: 100%;
-  line-height: 2rem;
+  line-height: $height-40;
   background: transparent;
   border-right: 1px #e0e0e0 solid;
   display: block;

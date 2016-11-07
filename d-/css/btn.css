@@ -12,14 +12,14 @@
   display: inline-block;
   position: relative;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.75rem;
   background-color: #fdfdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
   color: #00a5e0;
   -webkit-box-sizing: border-box;
   background-clip: padding-box;
   border: 1px solid #cacccd;
-  border-radius: 3px;
+  border-radius: 0.15rem;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .d-btn,
@@ -51,8 +51,8 @@
 .d-btn:after {
   content: "";
   position: absolute;
-  top: -$btn-hot-area;
-  bottom: -$btn-hot-area;
+  top: -$btn-top;
+  bottom: -$btn-top;
   left: 0;
   right: 0;
 }

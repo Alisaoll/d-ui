@@ -9,7 +9,7 @@ h2 {
 }
 h3,
 h4 {
-  font-size: $font-size-title;
+  font-size: 0.8rem;
 }
 h5,
 .d-txt-sub {
@@ -39,5 +39,5 @@ h6,
   color: #00a5e0;
 }
 .d-txt-10 {
-  font-size: 0.5rem;
+  font-size: 0.5rem !important;
 }

@@ -8,7 +8,7 @@
     height:20px;
     display:block;
     background-image url('../img/loading_sprite.png');
-    -webkit-background-size: auto 20px;
+    -webkit-background-size: auto $height-20;
     -webkit-animation:rotate 1s steps(12) infinite
 }
 @-webkit-keyframes rotate {
@@ -46,10 +46,10 @@
 }
 
 .{$pf}loading-box{
-    top: 0px;
-    left: 0px;
-    width: 6rem;
-    height: 5rem;
+    top: 0;
+    left: 0;
+    width: $width-120;
+    height: $height-100;
     z-index: 999;
     background-color: #000;
     display: box;
@@ -59,7 +59,7 @@
     -webkit-box-pack: center;
     background: rgba(0,0,0,.65);
     color:#fff;
-    border-radius: 6px;
+    border-radius: $boeder-r-6;
 }
 @-webkit-keyframes rotate2 {
     from {

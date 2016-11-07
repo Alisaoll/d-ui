@@ -9,49 +9,61 @@
   text-align: right;
 }
 .{$pf}margin-lr-2{
-	margin:0 0.1rem;
+	margin:0 $margin-2;
 }
 .{$pf}margin-lr-5{
-	margin:0 0.25rem;
+	margin:0 $margin-5;
 }
 .{$pf}margin-lr-10{
-	margin:0 0.5rem;
+	margin:0 $margin-10;
 }
 .{$pf}margin-l-10{
-	margin-left:0.5rem;
+	margin-left:$margin-10;
 }
 .{$pf}margin-l-2-half{
 	margin-left:0.125rem;
 }
 .{$pf}margin-r-10{
-	margin-right:0.5rem;
+	margin-right:$margin-10;
+}
+.{$pf}margin-r-20{
+  margin-right:$margin-20;
 }
 .{$pf}margin-t-50{
-	margin-top:2.5rem;
+	margin-top:$margin-50;
 }
 .{$pf}margin-t-10{
-	margin-top:0.5rem;
+	margin-top:$margin-10;
 }
 .{$pf}margin-t-5{
-	margin-top:0.25rem;
+	margin-top:$margin-5;
+}
+.{$pf}margin-b-10{
+  margin-bottom:$margin-10;
+}
+.{$pf}margin-tb-10{
+   margin:$margin-10 0;
 }
 .{$pf}margin-r-1{
-	margin-right:0.05rem;
+	margin-right:$margin-1;
 }
 .{$pf}padding-r-20{
-	padding-right:1rem;
+	padding-right:$margin-20;
 }
 .{$pf}padding-l-20{
-	padding-left:1rem;
+	padding-left:$margin-20;
 }
 .{$pf}padding-r-10{
-	padding-right:0.5rem;
+	padding-right:$margin-10;
 }
 .{$pf}padding-lr-10{
-  padding:0 0.5rem;
+  padding:0 $margin-10;
 }
 .{$pf}padding-l-10{
-	padding-left:0.5rem;
+	padding-left:$margin-10;
+}
+.{$pf}padding-r-3{
+  padding-right:0.15rem;
 }
 .{$pf}padding-r-0{
 	padding-right:0;
@@ -60,58 +72,76 @@
 	padding-left:0;
 }
 .{$pf}padding-tb-20{
-	padding:1rem 0;
+	padding:$margin-20 0;
 }
 .{$pf}padding-t-10{
-  padding-top:0.5rem;
+  padding-top:$margin-10;
 }
 .{$pf}padding-t-20{
-  padding-top:1rem;
+  padding-top:$margin-20;
 }
 .{$pf}padding-tb-5{
-  padding:0.25rem 0;
+  padding:$margin-5 0;
 }
 .{$pf}padding-tb-10{
-  padding:0.5rem 0;
+  padding:$margin-10 0;
 }
 .{$pf}width-8{
-  width:8px !important;
+  width:$width-8 !important;
 }
 .{$pf}width-20{
-  width:20px;
+  width:$width-20;
 }
 .{$pf}grid-badge{
-
 }
-
 .{$pf}fill {object-fit: fill; height:100% }
 .{$pf}contain { object-fit: contain; height:100%}
 .{$pf}cover { object-fit: cover;height:100% }
 .{$pf}none { object-fit: none;height:100% }
 .{$pf}scale-down { object-fit: scale-down; height:100%}
 .{$pf}position-a{
-       position absolute;
-       
+       position absolute;      
 }
 .{$pf}position-r{
-       position:relative;
-       
+       position:relative;      
 }
 .{$pf}line-h{
 	line-height 1.45rem;
 }
 .{$pf}position-icon{
-	position absolute;
-	 top:0px;
+	  position absolute;
+	  top:0px;
     left:0.5rem;
     color: #666;	
 }
 .{$pf}margin-auto{
-       margin:0 auto;
-       
+       margin:0 auto;      
 }
 .{$pf}position-more{
-  position: absolute;
-    bottom: 0.5rem;
-    left: 31%;
+    position: absolute;
+    bottom: 0.45rem;
+    left: 29%;
+}
+.{$pf}b-radius-10{
+  -webkit-border-radius: 0.5rem !important;
+    border-radius: 0.5rem !important;
+}   
+.{$pf}rec{
+    border-left: 0.15rem solid $header-bg-orange;
+    padding-left: 0.25rem;
+    margin-bottom: 0.5rem;
+    }
+.{$pf}p-left-58{
+       left:58% !important;     
+}
+
+.{$pf}txt-orange{
+       color:$header-bg-orange;   
+      
+}//求助字体颜色
+.{$pf}tip{
+   font-weight bold;
+}
+.{$pf}bg-f{
+background-color #fff;
 }

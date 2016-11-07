@@ -1,6 +1,5 @@
 .d-list {
   background-color: #fff;
-  margin-bottom: 1rem;
   width: 100%;
 }
 .d-list-content {
@@ -28,7 +27,7 @@
   margin: 0 0.05rem;
 }
 .d-list li {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   position: relative;
 }
 .d-list-info {
@@ -44,7 +43,7 @@
   box-pack: center;
 }
 .d-list-txt {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: #5f646e;
   line-height: 1rem;
   position: relative;

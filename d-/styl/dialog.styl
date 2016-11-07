@@ -16,8 +16,8 @@
   background: rgba(0, 0, 0, 0.4);
 }
 .{$pf}dialog-box{
-   border-radius: 0.3rem;
-    width: 13.5rem;
+    border-radius:$boeder-r-6;
+    width: $width-270;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;  
     background-color: rgba(253, 253, 253, 0.95);
@@ -25,8 +25,8 @@
     font-size: 0.8rem;
 }
 .{$pf}dialog-hd{
-  height 2.2rem;
-  line-height 2.2rem;
+  height $height-44;
+  line-height $height-44;
   position relative;
   text-align center;
   border:1px solid #e0e0e0;
@@ -34,20 +34,20 @@
 }
 .{$pf}dialog-hd span{
     display:block;
-    width:1.3rem;
-    height:1.3rem;
-    border-radius 0.65rem;
+    width:$height-26;
+    height:$height-26;
+    border-radius $boeder-r-13;
     position absolute;
-    right:0.25rem;
-    top:0.4rem;
+    right:$right-5;
+    top:$top-8;
     border:1px solid #ccc;
-    line-height 1.3rem;
+    line-height $height-26;
   }
 .{$pf}dialog-content{
-    min-height: 71px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    padding: 18px;
+    min-height: $height-71;
+    border-top-left-radius:$boeder-r-6
+    border-top-right-radius:$boeder-r-6;
+    padding: $margin-18;
     display: -webkit-box;
     display: box;
     -webkit-box-pack: center;
@@ -55,21 +55,21 @@
     -webkit-box-orient: vertical;
 }
 .{$pf}dialog-footer{
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius:$boeder-r-6;
+    border-bottom-right-radius:$boeder-r-6;
     display: -webkit-box;
     width: 100%;
     box-sizing: border-box;
     -webkit-box-align: center;
     border-top: 1px solid #e0e0e0;
-    height: 2.1rem;
-    line-height: 2.1rem;
+    height: $height-42;
+    line-height: $height-42;
     button{
      color: #00a5e0;
     text-align: center;
     border:0;
     width: 100%;
-    line-height:2rem;
+    line-height:$height-40;
     background: transparent;
     border-right: 1px #e0e0e0 solid;
     display: block;

@@ -19,9 +19,9 @@
   right: 0;
   left: 0;
   z-index: 10;
-  height: 2.2rem;
-  line-height: 2.2rem;
-  background-color: #18b4ed;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  background-color: #ff7f00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -40,13 +40,13 @@
   line-height: 1.3rem;
   min-width: 2.75rem;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.75rem;
   background-color: #fdfdfd;
   color: #00a5e0;
   -webkit-box-sizing: border-box;
   background-clip: padding-box;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0.15rem;
   position: relative;
 }
 .d-nav button:after {
@@ -82,6 +82,8 @@
   display: inline-block;
   padding: 0 0.125rem;
   line-height: 0.8rem;
+  height: 0.8rem;
+  width: 0.8rem;
   text-align: center;
 }
 .d-nav-btn {
@@ -104,7 +106,7 @@
   line-height: 1.3rem;
   min-width: 2.75rem;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.75rem;
   -webkit-box-sizing: border-box;
   background-clip: padding-box;
   position: relative;
@@ -126,7 +128,7 @@
 }
 .d-btn-nav-img {
   position: absolute;
-  left: 10px;
+  left: 0.5rem;
 }
 .d-nav-btn button:active {
   background-color: #fdfdfd !important;

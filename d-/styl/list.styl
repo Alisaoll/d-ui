@@ -1,12 +1,12 @@
 @import 'variable.styl'
 .{$pf}list{
 	background-color #fff;
-	margin-bottom 1rem;
+	// margin-bottom:$margin-10;
 	width:100%;
 }
 .{$pf}list-content{
 	box-sizing: border-box;
-    min-height: 2.2rem;
+    min-height:$height-44;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -28,15 +28,14 @@
 	
 }
 .{$pf}list-items .{$pf}list-img-wrap{
-    margin:0 0.05rem;
+    margin:0 $margin-1;
 }
 .{$pf}list li{
-    padding:0.25rem;
+    padding:$margin-5 0;
     position:relative;
 }
 .{$pf}list-info{
-	padding-left:0.55rem;
-    // padding-right:0.75rem;   
+	padding-left:$margin-11;
 	-webkit-box-flex: 1;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -48,9 +47,9 @@
     box-pack:center;
 }
 .{$pf}list-txt{
-    font-size: 0.65rem;
+    font-size:$font-size-14;
     color: #5f646e;
-    line-height: 1rem;
+    line-height:$height-20;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
