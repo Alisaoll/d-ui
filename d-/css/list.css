@@ -51,7 +51,6 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  padding-left: 0.125rem;
 }
 .d-list-txt-clamp-2 {
   -webkit-line-clamp: 2;

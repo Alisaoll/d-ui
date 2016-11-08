@@ -93,7 +93,7 @@
   z-index: 10;
   height: 2.2rem;
   line-height: 2.2rem;
-  background-color: #18b4ed;
+  background-color: #ff7f00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -110,7 +110,7 @@
   -webkit-box-sizing: border-box;
   background-clip: padding-box;
   position: relative;
-  background-color: #18b4ed !important;
+  background-color: #ff7f00 !important;
   color: #fdfdfd !important;
   border: 1px solid #fff;
 }

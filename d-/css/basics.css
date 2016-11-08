@@ -25,6 +25,9 @@
 .d-margin-r-10 {
   margin-right: 0.5rem;
 }
+.d-margin-r-5 {
+  margin-right: 0.25rem;
+}
 .d-margin-r-20 {
   margin-right: 1rem;
 }
@@ -32,10 +35,13 @@
   margin-top: 2.5rem;
 }
 .d-margin-t-10 {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem !important;
 }
 .d-margin-t-5 {
   margin-top: 0.25rem;
+}
+.d-margin-b-5 {
+  margin-bottom: 0.25rem;
 }
 .d-margin-b-10 {
   margin-bottom: 0.5rem;
@@ -58,6 +64,9 @@
 .d-padding-lr-10 {
   padding: 0 0.5rem;
 }
+.d-padding-lr-20 {
+  padding: 0 1rem;
+}
 .d-padding-l-10 {
   padding-left: 0.5rem;
 }
@@ -74,7 +83,7 @@
   padding: 1rem 0;
 }
 .d-padding-t-10 {
-  padding-top: 0.5rem;
+  padding-top: 0.5rem !important;
 }
 .d-padding-t-20 {
   padding-top: 1rem;
@@ -83,13 +92,16 @@
   padding: 0.25rem 0;
 }
 .d-padding-tb-10 {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 !important;
 }
 .d-width-8 {
   width: 0.4rem !important;
 }
 .d-width-20 {
   width: 1rem;
+}
+.d-height-40 {
+  height: 2rem;
 }
 .d-fill {
   object-fit: fill;
@@ -131,7 +143,7 @@
 }
 .d-position-more {
   position: absolute;
-  bottom: 0.45rem;
+  bottom: 0.5rem;
   left: 29%;
 }
 .d-b-radius-10 {
@@ -146,12 +158,24 @@
 .d-p-left-58 {
   left: 58% !important;
 }
+.d-p-left-0 {
+  left: 0% !important;
+}
 .d-txt-orange {
   color: #ff7f00;
+}
+.d-activity-state {
+  background-color: #9acd32;
+  color: #fff;
 }
 .d-tip {
   font-weight: bold;
 }
 .d-bg-f {
   background-color: #fff;
+}
+.d-nowrap-c {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }

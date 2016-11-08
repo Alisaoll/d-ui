@@ -26,6 +26,9 @@
 .{$pf}margin-r-10{
 	margin-right:$margin-10;
 }
+.{$pf}margin-r-5{
+  margin-right:$margin-5;
+}
 .{$pf}margin-r-20{
   margin-right:$margin-20;
 }
@@ -33,10 +36,13 @@
 	margin-top:$margin-50;
 }
 .{$pf}margin-t-10{
-	margin-top:$margin-10;
+	margin-top:$margin-10 !important;
 }
 .{$pf}margin-t-5{
 	margin-top:$margin-5;
+}
+.{$pf}margin-b-5{
+  margin-bottom:$margin-5;
 }
 .{$pf}margin-b-10{
   margin-bottom:$margin-10;
@@ -59,6 +65,9 @@
 .{$pf}padding-lr-10{
   padding:0 $margin-10;
 }
+.{$pf}padding-lr-20{
+  padding:0 $margin-20;
+}
 .{$pf}padding-l-10{
 	padding-left:$margin-10;
 }
@@ -75,7 +84,7 @@
 	padding:$margin-20 0;
 }
 .{$pf}padding-t-10{
-  padding-top:$margin-10;
+  padding-top:$margin-10 !important;
 }
 .{$pf}padding-t-20{
   padding-top:$margin-20;
@@ -84,13 +93,16 @@
   padding:$margin-5 0;
 }
 .{$pf}padding-tb-10{
-  padding:$margin-10 0;
+  padding:$margin-10 0 !important;
 }
 .{$pf}width-8{
   width:$width-8 !important;
 }
 .{$pf}width-20{
   width:$width-20;
+}
+.{$pf}height-40{
+  height:$height-40;
 }
 .{$pf}grid-badge{
 }
@@ -119,7 +131,7 @@
 }
 .{$pf}position-more{
     position: absolute;
-    bottom: 0.45rem;
+    bottom: 0.5rem;
     left: 29%;
 }
 .{$pf}b-radius-10{
@@ -134,14 +146,27 @@
 .{$pf}p-left-58{
        left:58% !important;     
 }
+.{$pf}p-left-0{
+       left:0% !important;     
+}
 
 .{$pf}txt-orange{
        color:$header-bg-orange;   
       
 }//求助字体颜色
+.{$pf}activity-state{
+  background-color:#9ACD32;
+  color:#fff;
+}
 .{$pf}tip{
    font-weight bold;
 }
 .{$pf}bg-f{
 background-color #fff;
+}
+.{$pf}nowrap-c{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+   
 }
