@@ -2431,3 +2431,12 @@ h6,
   bottom: 0.5rem;
   left: 31%;
 }
+.d-label-skill-tag{
+  position: absolute;
+    top: -0.3rem;
+    background-color: red;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 0 0.2rem;
+    left: 64%;
+}

@@ -46,6 +46,9 @@
 .d-margin-b-10 {
   margin-bottom: 0.5rem;
 }
+.d-margin-b-20 {
+  margin-bottom: 1rem;
+}
 .d-margin-tb-10 {
   margin: 0.5rem 0;
 }
@@ -54,6 +57,12 @@
 }
 .d-padding-r-20 {
   padding-right: 1rem;
+}
+.d-padding-b-20 {
+  padding-bottom: 1rem;
+}
+.d-padding-b-10 {
+  padding-bottom: 0.5rem;
 }
 .d-padding-l-20 {
   padding-left: 1rem;
@@ -93,6 +102,9 @@
 }
 .d-padding-tb-10 {
   padding: 0.5rem 0 !important;
+}
+.d-padding-10 {
+  padding: 0.5rem !important;
 }
 .d-width-8 {
   width: 0.4rem !important;
@@ -146,6 +158,10 @@
   bottom: 0.5rem;
   left: 29%;
 }
+.d-position-b-0 {
+  position: absolute;
+  bottom: 0;
+}
 .d-b-radius-10 {
   -webkit-border-radius: 0.5rem !important;
   border-radius: 0.5rem !important;
@@ -153,7 +169,6 @@
 .d-rec {
   border-left: 0.15rem solid #ff7f00;
   padding-left: 0.25rem;
-  margin-bottom: 0.5rem;
 }
 .d-p-left-58 {
   left: 58% !important;
@@ -178,4 +193,13 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+.d-label-skill-tag {
+  position: absolute;
+  top: -0.3rem;
+  background-color: #f00;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 0 0.2rem;
+  left: 64%;
 }

@@ -38,6 +38,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  align-items: center;
 }
 .d-justify-content-end {
   -webkit-justify-content: flex-end;
@@ -55,6 +56,11 @@
   -webkit-box-align: center;
 }
 .d-flex-item-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;

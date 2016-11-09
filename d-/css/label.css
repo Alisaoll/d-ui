@@ -21,6 +21,11 @@
   white-space: nowrap;
   vertical-align: baseline; /*默认。元素放置在父元素的基线上。*/
   border-radius: 10rem;
+  margin-bottom: 0.25rem;
+}
+.d-label-skill:active {
+  background-color: #ff7f00;
+  color: #fff;
 }
 .d-label-primary {
   color: #fff;

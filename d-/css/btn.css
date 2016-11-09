@@ -95,6 +95,9 @@
   background: #f2f2f2;
   color: rgba(0,165,224,0.5);
 }
+.d-btn-green {
+  background-color: #9acd32 !important;
+}
 .d-btn-primary {
   background-color: #18b4ed;
   color: #fff;

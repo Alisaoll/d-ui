@@ -20,6 +20,13 @@
   width: 2.5rem;
   height: 2.5rem;
 }
+.d-avatar-s-32 {
+  display: block;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 1.6rem;
+  height: $height-32;
+}
 .d-avatar-s-80 {
   display: block;
   -webkit-background-size: cover;

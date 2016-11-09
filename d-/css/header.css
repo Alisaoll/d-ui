@@ -49,6 +49,10 @@
   border-radius: 0.15rem;
   position: relative;
 }
+.d-nav-active {
+  background-color: #fff !important;
+  color: #ff7f00 !important;
+}
 .d-nav button:after {
   width: 200%;
   height: 200%;
@@ -87,9 +91,10 @@
   text-align: center;
 }
 .d-nav-btn {
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
+  top: 0;
   z-index: 10;
   height: 2.2rem;
   line-height: 2.2rem;
@@ -110,8 +115,8 @@
   -webkit-box-sizing: border-box;
   background-clip: padding-box;
   position: relative;
-  background-color: #ff7f00 !important;
-  color: #fdfdfd !important;
+  background-color: #ff7f00;
+  color: #fdfdfd;
   border: 1px solid #fff;
 }
 .d-nav-r {
@@ -131,6 +136,6 @@
   left: 0.5rem;
 }
 .d-nav-btn button:active {
-  background-color: #fdfdfd !important;
-  color: #18b4ed !important;
+  background-color: #fff !important;
+  color: #ff7f00 !important;
 }
