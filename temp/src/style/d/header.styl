@@ -1,0 +1,168 @@
+@import 'variable.styl';
+.{$pf}nav-t{
+   top:0;
+}
+.{$pf}nav-b{
+   bottom:0;
+   display:table !important;
+       position: fixed;
+       background-color:#fff !important;
+       color:#333 !important;
+       height:2.2rem;
+}
+.{$pf}nav-b .{$pf}nav-b-items{
+  display:table-cell;
+  line-height normal !important;
+  vertical-align middle;
+  text-align center;
+} 
+.{$pf}nav-b .{$pf}nav-b-items span{
+    display block;
+}
+.{$pf}nav{
+	// position: fixed;
+ //    right: 0;
+ //    left: 0;
+    z-index:1;
+    // height:$height-45;
+    // line-height $height-45;
+    background-color: $header-bg-orange;
+    color:#fff;
+    display -webkit-box;
+    display -webkit-flex;
+    display flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width:100%;
+    
+}
+.{$pf}nav a{
+	color:inherit;
+}
+.{$pf}nav .{$pf}nav-item{
+	width:100%
+}
+.{$pf}nav button{
+    line-height:$height-26;
+    min-width: $width-55; 
+    text-align: center;
+    font-size: $font-size-15;
+    background-color: #fdfdfd;
+    color: #00a5e0;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+  	 border: 0;
+    // border-radius: $boeder-r-3;
+     position:relative;
+    
+}
+.{$pf}nav-active{
+    background-color: #fff !important;
+    color: #ff7f00 !important;
+}
+.{$pf}nav button:after{ 
+        width:200%;
+        height:200%;
+        position:absolute;
+        top:0;left:0;z-index:0;
+        content:"";
+        -webkit-transform:scale(0.5);
+        -webkit-transform-origin:0 0;
+        transform:scale(0.5);
+        transform-origin:0 0;
+        }
+.{$pf}header-inner{
+	display -webkit-box;
+	display -webkit-flex;
+	display flex;
+	align-items:center;
+}
+.{$pf}nav .current{
+   
+    border-bottom: 2px red solid;
+}
+
+.{$pf}nav-badge{
+    position: absolute;
+    top:4px;
+    left: 50%;
+    font-size: $font-size-10;
+    color: #fff;
+    background-color: #ff2600;
+    border-radius: $boeder-r-8;
+    display: inline-block;
+    padding: 0 0.125rem;
+    // line-height: $height-16;
+    // height:$height-16;
+    width:$height-16
+    text-align: center;
+}
+.{$pf}nav-message{
+    position: absolute;
+    top:0px;
+    left: 30%;
+    font-size: $font-size-10;
+    color: #fff;
+    background-color: #ff2600;
+    border-radius: $boeder-r-8;
+    display: inline-block;
+    padding: 0 0.125rem;
+    line-height: $height-16;
+    height:$height-16;
+    width:$height-16
+    text-align: center;
+}
+
+.{$pf}nav-btn{
+    position: absolute;;
+    right: 0;
+    left: 0;
+    top:0;
+    z-index: 10;
+    height: $height-44;
+    line-height $height-44;
+    background-color: $header-bg-orange;
+    color:#fff;
+    display -webkit-box;
+    display -webkit-flex;
+    display flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width:100%;
+    // align-items:center;
+}
+
+.{$pf}nav-btn button{
+     line-height:$height-26;
+    min-width:$width-55; 
+    text-align: center;
+    font-size: $font-size-15;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+     position:relative;  
+    background-color: $header-bg-orange;
+    color: #fdfdfd;
+    border: 1px solid #fff;
+    
+}
+.{$pf}nav-r{
+  position:relative;
+}
+.{$pf}btn-nav-l{   
+    border-right: 0 !important;
+    border-bottom-left-radius: $boeder-r-15 !important;
+    border-top-left-radius: $boeder-r-15 !important;  
+}
+.{$pf}btn-nav-r{    
+    border-bottom-right-radius: $boeder-r-15 !important;
+    border-top-right-radius: $boeder-r-15 !important;
+}
+.{$pf}btn-nav-img{
+    position: absolute;
+    left: $left-10;   
+}
+.{$pf}nav-btn button:active{
+    background-color:#fff !important;
+    color: #ff7f00 !important;
+    
+}

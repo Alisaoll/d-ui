@@ -1,0 +1,176 @@
+@import 'variable.styl'
+.{$pf}list{
+	background-color #fff;
+	// margin-bottom:$margin-10;
+	width:100%;
+}
+.{$pf}list-content{
+	box-sizing: border-box;
+    min-height:$height-44;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.{$pf}list .{$pf}list-items{
+	display -webkit-box;
+	display -webkit-flex;
+	display flex;
+	width:100%
+    box-sizing: border-box;	
+    justify-content: start;      	
+}
+.{$pf}list-items .{$pf}list-img-wrap{
+    margin:0 $margin-1;
+}
+.{$pf}list li{
+    padding:$margin-10 0;
+    position:relative;
+}
+.{$pf}list-info{
+	padding-left:$margin-11;
+	-webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display:box;
+    box-pack:center;
+}
+
+.{$pf}list-txt-clamp-2{
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+.{$pf}list-txt-clamp-3{
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+.{$pf}list li:active{
+    background-color:#eee;
+    }
+
+.{$pf}list-position{
+    position: absolute;
+    bottom: -4px;
+    // left: 27%;
+    font-size:0.6rem;
+}
+.{$pf}list-prev{
+    border-left: 0.15rem solid #ff7f00;
+    padding-left: 0.25rem;
+    margin: 0.5rem 0; 
+  
+}
+
+
+.{$pf}list [class*=d-col-xs-]{
+         // text-align:center;
+         // padding:0 0.25rem;
+ }
+ .{$pf}list .{$pf}col-xs-3{
+    // height:20vw;
+ }
+
+
+/*2016.11.11框架重新梳理*/
+.{$pf}list [class*=d-col-xs-]{
+        height:18vw;
+ }
+ .{$pf}img-wrap{
+    margin: 0.5rem 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.{$pf}img-wrap .{$pf}img-box{
+        width:32.2%;
+        height:20vw;
+}
+
+.{$pf}list li{
+    border-bottom:1px solid #e0e0e0;
+}
+.{$pf}list img{
+   object-fit: cover;
+    height: 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .{$pf}list li{
+      border:0;
+      background-position:left bottom;
+     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)); 
+     background-repeat: repeat-x;
+    -webkit-background-size: 100% 1px;
+      }
+}
+.{$pf}list-txt{
+    font-size:$font-size-14;
+    color: #5f646e;
+    line-height:$height-20;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+.{$pf}list .{$pf}col-xs-9 .{$pf}list-position{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    bottom: -4px;
+    font-size: 0.6rem;
+    width:96%;
+}
+.{$pf}list .{$pf}tip{
+        color: #ff7f00;
+        font-weight:bold;
+}
+.{$pf}list-position .{$pf}list-bottom{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    font-size:0.5rem;
+}
+.{$pf}list-position .{$pf}list-bottom span{
+    margin-right:1rem;
+}
+.{$pf}list-bottom .{$pf}comment i{
+   font-size:0.5rem !important;
+   padding-right:0.15rem;
+}
+.{$pf}more{
+    font-size:0.6rem;
+    text-align center;
+    color:#777;
+    padding: 0.5rem 0 !important;
+}
+.{$pf}more:active{
+    background-color:#eee;
+}
+.{$pf}more i{
+    font-size:0.5rem;
+    margin-left:0.25rem;
+}

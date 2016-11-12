@@ -1,0 +1,121 @@
+@import "mixin.styl"
+@import "variable.styl"
+/*
+按钮
+*/
+.{$pf}btn{
+    height: $btn-height;
+    line-height: $btn-height;
+    padding: $btn-padding;
+    min-width: $btn-min-width;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: $btn-size;
+    background-color: $btn-bg-color;
+    background-image: $btn-bg-image;
+    color: $btn-text;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+    _border-radius($btn-border-color,$btn-border-radius,$btn-before-border-radius);
+}
+
+.{$pf}btn:after{
+    content: "";
+    position: absolute;
+    top: -$btn-top;
+    bottom: -$btn-top;
+    left: 0;
+    right: 0;
+}
+
+.{$pf}btn.disabled,.{$pf}btn:disabled{
+    border: 0;
+    color: $btn-disabled-text;
+    background: $btn-disabled-bg-color;
+    background-clip: padding-box;
+}
+
+.{$pf}btn-wrap{
+    padding: $btn-wrap-padding;
+    @media (max-width: 320px) {
+        padding: $btn-wrap-padding-s;
+    }
+}
+
+.{$pf}btn-s{
+	 @extend .{$pf}btn;
+    padding: 0;
+    width: $btn-s-width;
+    height: $btn-s-height;
+    line-height: $btn-s-height;
+    font-size: $btn-s-size;
+} 
+
+.{$pf}btn-lg{
+	 @extend .{$pf}btn;
+    font-size: $btn-lg-size;
+    height: $btn-lg-height;
+    line-height: $btn-lg-height;
+    display: block;
+    width: 100%;  
+    border-radius:$btn-lg-border-radius;
+}
+
+.{$pf}btn-lg:not(.disabled):not(:disabled):active,
+.{$pf}btn-lg.active,
+.{$pf}btn-s:not(.disabled):not(:disabled):active,
+.{$pf}btn-s.active,
+.{$pf}btn:active{
+    background-clip: padding-box;
+    background: #f2f2f2;
+    color: rgba(0, 165, 224, 0.5);
+}
+.{$pf}btn-green{
+    background-color #9acd32 !important;
+}
+
+.{$pf}btn-primary{
+    @extend .{$pf}btn;
+    _btn($btn-primary-bg-color,$btn-primary-text,$btn-primary-border-color); 
+    background-image: $btn-primary-bg-image;
+    background-clip: padding-box;
+}
+
+.{$pf}btn-primary:not(.disabled):not(:disabled):active,.{$pf}btn-primary.active{
+    _btn($btn-primary-active-bg,$btn-primary-active-text,$btn-primary-active-bg); 
+    background-clip: padding-box;
+}
+
+.{$pf}btn-danger{
+    _btn($btn-danger-bg-color,$btn-danger-text,$btn-danger-border-color); 
+    background-image: $btn-danger-bg-image;
+    background-clip: padding-box;
+}
+
+.{$pf}btn-danger:not(.disabled):not(:disabled):active,.{$pf}btn-danger.active{
+    _btn($btn-danger-active-bg,$btn-danger-active-text,$btn-danger-active-bg); 
+    background-clip: padding-box;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .{$pf}btn-primary:before{
+        border: 1px solid $btn-primary-border-color;
+    }
+    .{$pf}btn-danger:before{
+        border: 1px solid $btn-danger-border-color;
+    }
+    .{$pf}btn{
+        border: 0;
+    }
+    .{$pf}btn.disabled,
+    .{$pf}btn:disabled,
+    .{$pf}btn.disabled:before,
+    .{$pf}btn:disabled:before{
+        border: 1px solid $btn-disabled-bg-color;
+    }
+    .{$pf}btn-lg:before{
+        border-radius: $btn-lg-before-border-radius;
+    }
+    
+}

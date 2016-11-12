@@ -1,0 +1,64 @@
+@import 'variable.styl'
+.tag-p{
+  padding:$margin-2;
+  border-radius: $boeder-r-3;
+}
+.{$pf}tag{
+  position: relative;
+  padding:$margin-3;
+  box-sizing: border-box
+  &:before{
+   position: absolute;
+    font-size:$font-size-10;
+    width:$height-28;
+    height: $height-13;
+    line-height: $height-13;
+    z-index: 9;
+    text-align: center;  
+  }
+}
+.{$pf}tag-b-r{
+  &:before{
+    @extend .tag-p
+    position: absolute;
+    bottom:$bottom-3;
+    right:$bottom-3; 
+    color: #fff;
+    background-color: #5fb336;
+    content: '免费';   
+  }
+}
+.{$pf}tag-b-l{
+  &:before{
+     @extend .tag-p
+    position: absolute;
+    bottom: $bottom-3;
+    left: $left-3; 
+    color: #fff;
+    background-color: #5fb336;
+    content: '免费';   
+    padding:0.1rem;
+  }
+}
+.{$pf}tag-t-r{
+  &:before{
+     @extend .tag-p
+   position: absolute;
+    top:$bottom-3;
+    right:$bottom-3; 
+    color: #fff;
+    background-color: #5fb336;
+    content: '免费';   
+  }
+}
+.{$pf}tag-t-l{
+  &:before{
+     @extend .tag-p
+   position: absolute;
+    top: $bottom-3;
+    left:$bottom-3; 
+    color: #fff;
+    background-color: #5fb336;
+    content: '免费';   
+  }
+}

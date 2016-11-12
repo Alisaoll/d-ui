@@ -1,0 +1,155 @@
+@import "mixin.styl"
+@import "variable.styl"
+/*基本容器*/
+.{$pf}container {
+  padding-right:$margin-15;
+  padding-left: $margin-15;
+  margin-right: auto;
+  margin-left: auto;
+   background-color:#fff;
+  margin-bottom:$margin-10;
+//     padding:0.5rem;
+}
+.{$pf}container-fluid {
+  padding:0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:#fff;
+  margin-bottom:$margin-10;
+}
+.{$pf}row{
+  width:100%;
+}
+.{$pf}row:after,.{$pf}row:before {
+    content:'';
+    display: table;
+    clear:both;
+}
+.{$pf}col-xs-1, .{$pf}col-sm-1, .{$pf}col-md-1, .{$pf}col-lg-1, .{$pf}col-xs-2, .{$pf}col-sm-2, .{$pf}col-md-2, .{$pf}col-lg-2, .{$pf}col-xs-3, .{$pf}col-sm-3, .{$pf}col-md-3, .{$pf}col-lg-3, .{$pf}col-xs-4, .{$pf}col-sm-4, .{$pf}col-md-4, .{$pf}col-lg-4, .{$pf}col-xs-5, .{$pf}col-sm-5, .{$pf}col-md-5, .{$pf}col-lg-5, .{$pf}col-xs-6, .{$pf}col-sm-6, .{$pf}col-md-6, .{$pf}col-lg-6, .{$pf}col-xs-7, .{$pf}col-sm-7, .{$pf}col-md-7, .{$pf}col-lg-7, .{$pf}col-xs-8, .{$pf}col-sm-8, .{$pf}col-md-8, .{$pf}col-lg-8, .{$pf}col-xs-9, .{$pf}col-sm-9, .{$pf}col-md-9, .{$pf}col-lg-9, .{$pf}col-xs-10, .{$pf}col-sm-10, .{$pf}col-md-10, .{$pf}col-lg-10, .{$pf}col-xs-11, .{$pf}col-sm-11, .{$pf}col-md-11, .{$pf}col-lg-11, .{$pf}col-xs-12, .{$pf}col-sm-12, .{$pf}col-md-12, .{$pf}col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  // padding-right: $margin-15;
+  // padding-left: $margin-15;
+}
+.{$pf}col-xs-1, .{$pf}col-xs-2, .{$pf}col-xs-3, .{$pf}col-xs-4, .{$pf}col-xs-5, .{$pf}col-xs-6, .{$pf}col-xs-7, .{$pf}col-xs-8, .{$pf}col-xs-9, .{$pf}col-xs-10, .{$pf}col-xs-11, .{$pf}col-xs-12 {
+  float: left;
+  padding-left:0;
+}
+
+
+_col(xs,3,width);
+_col(xs-pull,3,right);
+_col(xs-push,3,left);
+_col(xs-offset,3,margin-left);
+@media (min-width: 768px) {
+  .{$pf}col-sm-1, .{$pf}col-sm-2, .{$pf}col-sm-3, .{$pf}col-sm-4, .{$pf}col-sm-5, .{$pf}col-sm-6, .{$pf}col-sm-7, .{$pf}col-sm-8, .{$pf}col-sm-9, .{$pf}col-sm-10, .{$pf}col-sm-11, .{$pf}col-sm-12 {
+    float: left;
+  }
+  _col(sm,3,width);
+  _col(sm-pull,3,right);
+  _col(sm-push,3,left);
+  _col(sm-offest,3,margin-left); 
+}
+@media (min-width: 992px) {
+  .{$pf}col-md-1, .{$pf}col-md-2, .{$pf}col-md-3, .{$pf}col-md-4, .{$pf}col-md-5, .{$pf}col-md-6, .{$pf}col-md-7, .{$pf}col-md-8, .{$pf}col-md-9, .{$pf}col-md-10, .{$pf}col-md-11, .{$pf}col-md-12 {
+    float: left;
+  }
+  _col(md,3,width);
+  _col(md-pull,3,right);
+  _col(md-push,3,left);
+  _col(md-offest,3,margin-left);
+ }
+@media (min-width: 1200px) {
+  .{$pf}col-lg-1, .{$pf}col-lg-2, .{$pf}col-lg-3, .{$pf}col-lg-4, .{$pf}col-lg-5, .{$pf}col-lg-6, .{$pf}col-lg-7, .{$pf}col-lg-8, .{$pf}col-lg-9, .{$pf}col-lg-10, .{$pf}col-lg-11, .{$pf}col-lg-12 {
+    float: left;
+  }
+  _col(lg,3,width);
+  _col(lg-pull,3,right);
+  _col(lg-push,3,left);
+  _col(lg-offset,3,margin-left);
+}
+_col_height(2);
+
+.{$pf}grid-link:active{
+      background-color:#fdfdfd;
+      // margin:0 auto;
+}
+ // .{$pf}row [class*=d-col-xs-]{
+ //         // text-align:center;
+ // //         padding:0.25rem;
+ // }
+ .{$pf}row [class*=d-col-xs-]:active{
+        background-color:#eee;
+ }
+ // .{$pf}list [class*=d-col-xs-]{
+ //        height:15vw;
+ // }
+ 
+ .{$pf}grid-txt-other{ 
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    // margin-top: 0.5rem ;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    height: inherit;
+ }
+
+/*2016.11.11框架重新梳理*/
+.{$pf}grid{//宫格
+     font-size:$font-size-14;
+     padding:0.5rem;
+}
+.{$pf}grid .{$pf}row{
+
+}
+.{$pf}grid .{$pf}row [class*=d-col-xs-]{
+  padding:0.5rem 0.25rem;
+}
+.{$pf}grid .{$pf}grid-txt{ 
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.5rem ;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    height: inherit;
+ }
+.{$pf}grid .{$pf}badge{
+  position: absolute;
+    top: 7px;
+    left: 58%;
+    font-size: 0.5rem;
+    color: #fff;
+    background-color: #ff2600;
+    border-radius: 0.4rem;
+    display: inline-block;
+    padding: 0 0.125rem;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    width: 0.8rem;
+    text-align: center;
+}
+
+.{$pf}circular img{
+   border-radius: 5rem !important;
+}
+.{$pf}grid img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+    display: block;
+    -webkit-background-size: cover;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    background-size: cover;
+    overflow: hidden;
+    
+}

@@ -1,0 +1,152 @@
+.d-nav-t {
+  top: 0;
+}
+.d-nav-b {
+  bottom: 0;
+  display: table !important;
+  position: fixed;
+  background-color: #fff !important;
+  color: #333 !important;
+  height: 2.2rem;
+}
+.d-nav-b .d-nav-b-items {
+  display: table-cell;
+  line-height: normal !important;
+  vertical-align: middle;
+  text-align: center;
+}
+.d-nav-b .d-nav-b-items span {
+  display: block;
+}
+.d-nav {
+  z-index: 1;
+  background-color: #ff7f00;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+}
+.d-nav a {
+  color: inherit;
+}
+.d-nav .d-nav-item {
+  width: 100%;
+}
+.d-nav button {
+  line-height: 1.3rem;
+  min-width: 2.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+  background-color: #fdfdfd;
+  color: #00a5e0;
+  -webkit-box-sizing: border-box;
+  background-clip: padding-box;
+  border: 0;
+  position: relative;
+}
+.d-nav-active {
+  background-color: #fff !important;
+  color: #ff7f00 !important;
+}
+.d-nav button:after {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  content: "";
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+.d-header-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.d-nav .current {
+  border-bottom: 2px #f00 solid;
+}
+.d-nav-badge {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  font-size: 0.5rem;
+  color: #fff;
+  background-color: #ff2600;
+  border-radius: 0.4rem;
+  display: inline-block;
+  padding: 0 0.125rem;
+  width: 0.8rem;
+  text-align: center;
+}
+.d-nav-message {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  font-size: 0.5rem;
+  color: #fff;
+  background-color: #ff2600;
+  border-radius: 0.4rem;
+  display: inline-block;
+  padding: 0 0.125rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  width: 0.8rem;
+  text-align: center;
+}
+.d-nav-btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  background-color: #ff7f00;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+}
+.d-nav-btn button {
+  line-height: 1.3rem;
+  min-width: 2.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+  -webkit-box-sizing: border-box;
+  background-clip: padding-box;
+  position: relative;
+  background-color: #ff7f00;
+  color: #fdfdfd;
+  border: 1px solid #fff;
+}
+.d-nav-r {
+  position: relative;
+}
+.d-btn-nav-l {
+  border-right: 0 !important;
+  border-bottom-left-radius: 0.75rem !important;
+  border-top-left-radius: 0.75rem !important;
+}
+.d-btn-nav-r {
+  border-bottom-right-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+}
+.d-btn-nav-img {
+  position: absolute;
+  left: 0.5rem;
+}
+.d-nav-btn button:active {
+  background-color: #fff !important;
+  color: #ff7f00 !important;
+}

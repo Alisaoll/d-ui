@@ -1,0 +1,75 @@
+@import 'variable.styl'
+.avatar{
+  display: block;
+  -webkit-background-size: cover;
+  -webkit-border-radius:$boeder-r-200;
+  border-radius:$boeder-r-200;
+  background-size:cover;
+  overflow: hidden;
+}
+.{$pf}avatar-s-50{
+  display: block;
+  -webkit-background-size: cover;
+  border-radius:$boeder-r-200;
+  background-size:cover;
+   width:$width-50;
+  height: $height-50;
+}
+.{$pf}avatar-s-32{
+  display: block;
+  -webkit-background-size: cover;
+ //border-radius:$boeder-r-200;
+  background-size:cover;
+   width:$width-32;
+  height: $height-32;
+}
+.{$pf}avatar-s-80{
+  display: block;
+  -webkit-background-size: cover;
+  background-size:cover;
+   width:$width-80;
+  height: $height-80;
+}
+.{$pf}avatar-50{
+  @extend .avatar
+  width:$width-50;
+  height:$height-50;
+   border-radius:0.5rem !important;
+   margin:0 auto;
+}
+.{$pf}avatar-30{
+  @extend .avatar
+   width: $width-30;
+  height: $height-30;
+}
+.{$pf}avatar-25{
+  @extend .avatar
+   width: $width-25;
+  height: $height-25;
+}
+.{$pf}avatar-50 > span,.{$pf}avatar-80 > span,.{$pf}avatar-100 > span,.{$pf}avatar-120 > span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-border-radius: $boeder-r-200; 
+    border-radius:$boeder-r-200;
+    background-size:cover;
+}
+.{$pf}avatar-80{
+   @extend .avatar
+  width:$width-80;
+  height:$height-80;
+}
+.{$pf}avatar-100{
+   @extend .avatar
+  width:$width-100;
+  height:$height-100;
+}
+.{$pf}avatar-120{
+   @extend .avatar
+  width:$width-120;
+  height:$height-120;
+}

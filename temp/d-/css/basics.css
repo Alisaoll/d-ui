@@ -1,0 +1,340 @@
+.h1 {
+  font-size: 36px;
+}
+.h2 {
+  font-size: 30px;
+}
+.h3 {
+  font-size: 24px;
+}
+.h4 {
+  font-size: 18px;
+}
+.h5 {
+  font-size: 14px;
+}
+.h6 {
+  font-size: 12px;
+}
+.d-text-align-c {
+  text-align: center;
+}
+.d-text-align-l {
+  text-align: left;
+}
+.d-text-align-r {
+  text-align: right;
+}
+.d-margin-lr-2 {
+  margin: 0 0.1rem;
+}
+.d-margin-lr-5 {
+  margin: 0 0.25rem;
+}
+.d-margin-lr-10 {
+  margin: 0 0.5rem;
+}
+.d-margin-l-10 {
+  margin-left: 0.5rem;
+}
+.d-margin-l-2-half {
+  margin-left: 0.125rem;
+}
+.d-margin-r-10 {
+  margin-right: 0.5rem;
+}
+.d-margin-r-5 {
+  margin-right: 0.25rem;
+}
+.d-margin-r-20 {
+  margin-right: 1rem;
+}
+.d-margin-t-50 {
+  margin-top: 2.5rem;
+}
+.d-margin-t-10 {
+  margin-top: 0.5rem !important;
+}
+.d-margin-t-30 {
+  margin-top: 1.5rem !important;
+}
+.d-margin-t-20 {
+  margin-top: 1rem !important;
+}
+.d-margin-t-5 {
+  margin-top: 0.25rem;
+}
+.d-margin-t-0 {
+  margin-top: 0;
+}
+.d-margin-b-5 {
+  margin-bottom: 0.25rem;
+}
+.d-margin-5 {
+  margin: 0.25rem;
+}
+.d-margin-l-5 {
+  margin-left: 0.25rem;
+}
+.d-margin-b-10 {
+  margin-bottom: 0.5rem;
+}
+.d-margin-b-20 {
+  margin-bottom: 1rem;
+}
+.d-margin-tb-10 {
+  margin: 0.5rem 0;
+}
+.d-margin-r-1 {
+  margin-right: 0.05rem;
+}
+.d-padding-r-20 {
+  padding-right: 1rem;
+}
+.d-padding-b-20 {
+  padding-bottom: 1rem;
+}
+.d-padding-b-10 {
+  padding-bottom: 0.5rem;
+}
+.d-padding-l-20 {
+  padding-left: 1rem;
+}
+.d-padding-l-30 {
+  padding-left: 1.5rem;
+}
+.d-padding-l-5 {
+  padding-left: 0.25rem;
+}
+.d-padding-r-10 {
+  padding-right: 0.5rem;
+}
+.d-padding-lr-10 {
+  padding: 0 0.5rem;
+}
+.d-padding-lr-20 {
+  padding: 0 1rem;
+}
+.d-padding-l-10 {
+  padding-left: 0.5rem;
+}
+.d-padding-r-3 {
+  padding-right: 0.15rem;
+}
+.d-padding-r-0 {
+  padding-right: 0;
+}
+.d-padding-l-0 {
+  padding-left: 0 !important;
+}
+.d-padding-tb-20 {
+  padding: 1rem 0;
+}
+.d-padding-t-10 {
+  padding-top: 0.5rem !important;
+}
+.d-padding-t-20 {
+  padding-top: 1rem;
+}
+.d-padding-tb-5 {
+  padding: 0.25rem 0;
+}
+.d-padding-tb-10 {
+  padding: 0.5rem 0 !important;
+}
+.d-padding-10 {
+  padding: 0.5rem !important;
+}
+.d-padding-5 {
+  padding: 0.25rem !important;
+}
+.d-width-8 {
+  width: 0.4rem !important;
+}
+.d-width-20 {
+  width: 1rem;
+}
+.d-height-40 {
+  height: 2rem;
+}
+.d-fill {
+  object-fit: fill;
+  height: 100%;
+}
+.d-contain {
+  object-fit: contain;
+  height: 100%;
+}
+.d-cover {
+  object-fit: cover;
+  height: 100%;
+}
+.d-none {
+  object-fit: none;
+  height: 100%;
+}
+.d-scale-down {
+  object-fit: scale-down;
+  height: 100%;
+}
+.d-position-a {
+  position: absolute;
+}
+.d-position-r {
+  position: relative;
+}
+.d-position-f-b {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px !important;
+  height: 15rem;
+  right: 0px;
+  z-index: 10;
+}
+.d-line-h {
+  line-height: 1.45rem;
+}
+.d-position-icon {
+  position: absolute;
+  top: 3px;
+  left: 0.5rem;
+}
+.d-margin-auto {
+  margin: 0 auto;
+}
+.d-position-more {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 29%;
+}
+.d-position-b-0 {
+  position: absolute;
+  bottom: 0;
+}
+.d-b-radius-10 {
+  -webkit-border-radius: 0.5rem !important;
+  border-radius: 0.5rem !important;
+}
+.d-b-radius-100 {
+  -webkit-border-radius: 5rem !important;
+  border-radius: 5rem !important;
+}
+.d-rec {
+  border-left: 0.15rem solid #ff7f00;
+  padding-left: 0.25rem;
+}
+.d-p-left-58 {
+  left: 58% !important;
+}
+.d-p-left-58 {
+  left: 58% !important;
+}
+.d-p-left-0 {
+  left: 0% !important;
+}
+.d-txt-orange {
+  color: #ff7f00;
+}
+.d-activity-state {
+  background-color: #9acd32;
+  color: #fff;
+}
+.d-tip {
+  font-weight: bold;
+}
+.d-bg-f {
+  background-color: #fff;
+}
+.d-bg-e {
+  background-color: #eee;
+}
+.d-nowrap-c {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.d-label-skill-tag {
+  position: absolute;
+  top: -0.3rem;
+  background-color: #f00;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 0 0.2rem;
+  left: 64%;
+  font-size: 0.6rem;
+}
+.d-height-62 {
+  height: 3.1rem;
+}
+header input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+header input::-moz-placeholder {
+  color: #00f;
+  font-size: 14px;
+}
+.d-position-activity {
+  position: absolute;
+  left: 16%;
+  bottom: -3px;
+}
+/*2016.11.11框架重新梳理*/
+.d-height-15vw {
+  height: 15vw !important;
+}
+.d-like {
+  width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+/*个人中心*/
+.d-uesr-label button {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.6rem;
+  line-height: 1;
+  color: #616161;
+  background-color: #e0e0e0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1.15rem;
+  font-weight: bold;
+  color: #fff;
+}
+.d-uesr-label button:first-child {
+  background-color: #ff7f00;
+}
+.d-uesr-label button:last-child {
+  background-color: #03a9f4;
+}
+.d-user-grid {
+  padding: 0.5rem;
+}
+.d-user-border-r {
+  border-right: 1px solid #e0e0e0;
+}
+.d-badge-else {
+  left: 38% !important;
+  top: -3px;
+}
+/*活动*/
+.d-activity-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #777;
+}
+.d-activity-wrap i {
+  padding-right: 3px;
+  font-size: 0.5rem !important;
+}

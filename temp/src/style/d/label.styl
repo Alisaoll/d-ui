@@ -1,0 +1,76 @@
+@import 'variable.styl'
+@import 'mixin.styl'
+.{$pf}label {
+	display: inline-block;
+	padding: 0.25rem;
+	font-size: 0.6rem;
+	line-height: 1;
+	color: #616161;
+    background-color: #e0e0e0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;/*默认。元素放置在父元素的基线上。*/
+	border-radius:$boeder-r-3;
+}
+.{$pf}label-skill{
+	display: inline-block;
+	padding: 0.3rem 0;
+	font-size: 0.6rem;
+	line-height: 1;
+	color: #616161;
+   background-color: #e0e0e0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;/*默认。元素放置在父元素的基线上。*/
+	border-radius:$boeder-r-200;
+	margin-bottom:0.25rem;
+	width:4rem;
+}
+.{$pf}label-skill:active{
+	background-color: #ff7f00;
+	color:#fff;
+}
+
+.{$pf}label-primary {
+	_label_($txt-color-f,#00bcd4);
+}
+.{$pf}label-success {
+	_label_($txt-color-f,#009688);
+}
+.{$pf}label-info {
+	_label_($txt-color-f,#03a9f4);
+}
+.{$pf}label-warning {
+	_label_($txt-color-f,#ffc107);
+}
+.{$pf}label-danger {
+	_label_($txt-color-f,#e51c23);
+}
+.{$pf}label-outlined {
+	border: 1px solid #d9d9d9;
+	background-color: transparent;
+}
+.{$pf}label-outlined.{$pf}label-primary {
+	_label_outline(#00bcd4)
+}
+.{$pf}label-outlined.{$pf}label-success {
+	_label_outline(#009688)
+}
+.{$pf}label-outlined.{$pf}label-info {
+	_label_outline(#03a9f4)
+}
+.{$pf}label-outlined.{$pf}label-warning {
+	_label_outline(#ffc107)
+}
+.{$pf}label-outlined.{$pf}label-danger {
+	_label_outline(#e51c23)
+}
+.{$pf}label .{$pf}iconfont {
+	font-size: $font-size-12;
+}
+.{$pf}label-txt{
+	width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+}

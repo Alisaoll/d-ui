@@ -1,0 +1,30 @@
+@import 'variable.styl'
+.{$pf}tab{
+	width 100%;
+	overflow hidden;
+	background-color #fff;
+}
+.{$pf}tab-nav{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+	box-sizing border-box;
+	background-color #fff;
+	height $height-45;
+}
+.{$pf}tab-nav li{
+	display-flex:1;
+	width 100%;
+	text-align center;
+	height:$height-45;
+	line-height:$height-45;
+}
+.{$pf}tab-nav .current{
+    color: #00a5e0;
+    border-bottom: 2px #00a5e0 solid;
+}
+.{$pf}tab-content > li {
+  width: 100%; }
+.{$pf}tab-content-hide{
+	display none;
+}

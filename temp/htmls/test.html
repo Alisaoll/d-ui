@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<style type="text/css">
+ .border1{
+    height:40px;
+    border:1px solid #e0e0e0;
+  }
+   .border{
+    position: relative;
+   }
+  .border:after{
+    content: '';
+    position: absolute;
+   top: 0px;
+    left: 0px;
+    right:0px;
+    border-bottom: 1px solid red;
+    -webkit-transform: scaleY(.5);
+    -webkit-transform-origin: 0 0;
+  }
+  .border:before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    border-bottom: 1px solid red;
+    -webkit-transform: scaleY(.5);
+    -webkit-transform-origin: 0 0;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:2) {
+    /*.border{
+      position: relative;
+      border:0.5px;
+    }*/
+   /* .border:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+    -webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, right, bottom, left;
+    padding: 1px;
+    -webkit-box-sizing: border-box;
+    pointer-events: none;
+  }*/
+
+  }
+</style>
+<body>
+  <div class="border">边框</div>
+  <div class="border1">边框</div>
+</body>
+</html>

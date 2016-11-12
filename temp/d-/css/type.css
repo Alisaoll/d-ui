@@ -1,0 +1,77 @@
+a {
+  color: #00a5e0;
+}
+h1 {
+  font-size: 0.9rem;
+}
+h2 {
+  font-size: 0.85rem;
+}
+h3,
+h4 {
+  font-size: 0.8rem;
+}
+h5,
+.d-txt-sub {
+  font-size: 0.7rem;
+}
+h6,
+.d-txt-tips {
+  font-size: 0.6rem;
+}
+.d-font-12 {
+  font-size: 0.6rem;
+}
+.d-font-14 {
+  font-size: 0.7rem;
+}
+.d-txt-default {
+  color: #000;
+}
+.d-txt-white {
+  color: #fff;
+}
+.d-txt-info {
+  color: #777;
+}
+.d-txt-muted {
+  color: #bbb;
+}
+.d-txt-warning,
+.d-txt-red {
+  color: #ff4222;
+}
+.d-txt-primary {
+  color: #00a5e0;
+}
+.d-txt-10 {
+  font-size: 0.5rem !important;
+}
+/*2016.11.11重新梳理框架*/
+.d-h1,
+h1 {
+  font-size: 0.9rem;
+}
+.d-h2,
+h2 {
+  font-size: 0.8rem;
+}
+.d-h3,
+.d-h4,
+h3,
+h4 {
+  font-size: 0.7rem;
+}
+.d-h5,
+h5 {
+  font-size: 0.6rem;
+}
+.d-h6,
+h6 {
+  font-size: 0.5rem;
+}
+.d-text-center {
+  padding: 0.5rem !important;
+  text-align: center;
+  color: #777;
+}

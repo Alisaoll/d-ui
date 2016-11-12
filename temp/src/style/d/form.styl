@@ -1,0 +1,278 @@
+@import 'variable.styl'
+.{$pf}form{
+  background-color #fff;
+}
+// .{$pf}form-item {
+//     min-height: $height-44;
+//     padding-right:$margin-15;
+//     width: 100%;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     display: -webkit-box;
+//     display: -webkit-flex;
+//     display: flex;
+//     -webkit-box-pack: justify;
+//     -webkit-justify-content: space-between;
+//     justify-content: space-between;
+//     -webkit-box-align: center;
+//     -webkit-align-items: center;
+//     align-items: center;
+//     font-size:$font-size-14;
+//    }
+  .{$pf}form-item-inner{
+    width: 100%;
+    padding-left: $margin-10;
+    -webkit-box-flex: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .{$pf}form-item-inner1{
+     width: 67% !important;
+     padding-left:0 !important
+  }
+  
+  
+  // .{$pf}form-item-label{
+  //   width:50%;
+  // }
+  .{$pf}form-item-w{
+        height $height-44;
+        line-height $height-44;
+  }
+  .{$pf}form-item-inner button{
+    height $height-44;
+    color:#00a5e0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border:none;
+    background:none;
+    width:100%;
+  }
+  .{$pf}form-item-inner button:active{
+    background: #f2f2f2;
+    color: rgba(0,165,224,0.5);
+  }
+  .{$pf}form-item-p-r-0{
+    padding-right 0;
+  }
+  .{$pf}form-item-p-r-0 .d-form-item-inner-b{
+    padding-left 0;
+  }
+    .{$pf}form-item span{
+        height: $height-20;
+        display: block;
+        width: $width-32;
+        line-height: $height-18;
+        text-align: center;
+        border-radius: $boeder-r-10;
+        background-color: #666;
+        color: #fff;       
+  }
+  
+  .{$pf}form-item textarea {
+    height: $height-65;
+    font-size:$font-size-14;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    padding-top: $margin-24;
+   
+  }
+  .{$pf}form-item-span{
+    width:33%;
+  }
+  .{$pf}form-item-span-10{
+    width:33%;
+  }
+  .{$pf}form-item-span span{
+    width:$width-20;
+  }
+  .{$pf}form-item input,.{$pf}form-item textarea{
+    width:100%;
+  }
+//radio
+.{$pf}radio input {
+    display: inline-block;
+    width: $width-26;
+    height: $height-26;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin-right: $margin-8;
+    vertical-align: middle;
+    }
+.{$pf}radio {
+  line-height:$height-25;
+  display: inline-block; }
+.{$pf}radio-label{
+  width:20%;
+}
+
+.{$pf}radio input {
+  display: inline-block;
+  width: $width-26;
+  height: $height-26;
+  position: relative;
+  overflow: visible;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin-right: $margin-8;
+  margin-left:$margin-8;
+  vertical-align: middle; }
+
+.{$pf}radio input:before {
+  content: '';
+  display: block;
+  width: $width-24;
+  height: $height-24;
+  border: 1px solid #dfe0e1;
+  border-radius: $boeder-r-13;
+  background-clip: padding-box;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.{$pf}radio input:checked:after {
+  content: '';
+  display: block;
+  width: $height-14;
+  height: $height-14;
+  background: #18b4ed;
+  border-radius: $boeder-r-7;
+  position: absolute;
+  left: $left-6;
+  top: $top-6; }
+  
+  .{$pf}form-footer {
+  border-bottom-left-radius: $boeder-r-6;
+  border-bottom-right-radius: $boeder-r-6;
+  display: -webkit-box;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  height: $height-42;
+  line-height: $height-42;
+}
+.{$pf}form-footer button {
+  color: #00a5e0;
+  text-align: center;
+  border: 0;
+  width: 100%;
+  line-height: $height-40;
+  background: transparent;
+  border-right: 1px #e0e0e0 solid;
+  display: block;
+  margin: 0 !important;
+  -webkit-box-flex: 1;
+}
+.{$pf}form-footer button:active {
+    background: #f2f2f2;
+    color: rgba(0,165,224,0.5);
+}
+/*# sourceMappingURL=radio.css.map */
+/*2016.11.12 框架重新梳理*/
+.{$pf}form{
+  .{$pf}form-item{
+    min-height: 2.2rem;
+    padding-right: 0.75rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+     display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .file-upload{
+    padding-right: 0.75rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+  }
+  label{
+    width:5rem;
+    padding-left:0.5rem;
+  }
+  .upload{
+     position:relative;     
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    input{
+        height: 5rem;
+        width: 5rem;
+        background: none;
+        border: 1px dotted #e0e0e0;
+        overflow: hidden;
+        position:relative;
+        }
+     }
+    .upload-img{
+      width:5rem;
+      height:5rem;
+      margin-left:0.5rem;
+      position:relative
+      p{
+        background-color: #333;
+        opacity: 0.8;
+        position: absolute;
+        width: 5rem;
+        bottom: 0px;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        height: 1rem;
+        line-height: 1rem;
+      }
+    }     
+}
+.file{
+    width:5rem;
+    height:5rem;
+    border: 1px dotted #e0e0e0;   
+    margin:0 0 0 0.5rem;
+     position:relative;     
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    input[type='file']{
+       width:5rem;
+       height:5rem;   
+       opacity: 0;
+    }
+  }
+.upload-txt{
+   width: 3.5rem;
+    color: #777;
+    position: absolute;
+    left: 1rem;
+    text-align: center;
+    top: 1rem;
+    p{
+      font-size: 10px !important;
+    }
+   }
+.fundraising-btn{
+  margin: 10px auto;
+    display: block;
+    width: 4;
+    width: 70%;
+    height: 2rem;
+    border-radius: 3rem;
+    background: none;
+    background-color: #ff7f00;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.7rem;
+}

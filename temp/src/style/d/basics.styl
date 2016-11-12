@@ -1,0 +1,338 @@
+@import 'variable.styl';
+
+.h1{
+  font-size: 36px;
+}
+.h2{
+  font-size: 30px;
+}
+.h3{
+  font-size: 24px;
+}
+.h4{
+  font-size: 18px;
+}
+.h5{
+  font-size: 14px;
+}
+.h6{
+  font-size: 12px;
+}
+
+.{$pf}text-align-c {
+  text-align: center;
+}
+.{$pf}text-align-l {
+  text-align: left;
+}
+.{$pf}text-align-r {
+  text-align: right;
+}
+.{$pf}margin-lr-2{
+	margin:0 $margin-2;
+}
+.{$pf}margin-lr-5{
+	margin:0 $margin-5;
+}
+.{$pf}margin-lr-10{
+	margin:0 $margin-10;
+}
+.{$pf}margin-l-10{
+	margin-left:$margin-10;
+}
+.{$pf}margin-l-2-half{
+	margin-left:0.125rem;
+}
+.{$pf}margin-r-10{
+	margin-right:$margin-10;
+}
+.{$pf}margin-r-5{
+  margin-right:$margin-5;
+}
+.{$pf}margin-r-20{
+  margin-right:$margin-20;
+}
+.{$pf}margin-t-50{
+	margin-top:$margin-50;
+}
+.{$pf}margin-t-10{
+	margin-top:$margin-10 !important;
+}
+.{$pf}margin-t-30{
+  margin-top:$margin-30 !important;
+}
+.{$pf}margin-t-20{
+  margin-top:$margin-20 !important;
+}
+.{$pf}margin-t-5{
+	margin-top:$margin-5;
+}
+.{$pf}margin-t-0{
+  margin-top:0;
+}
+.{$pf}margin-b-5{
+  margin-bottom:$margin-5;
+}
+.{$pf}margin-5{
+  margin:$margin-5;
+}
+.{$pf}margin-l-5{
+  margin-left:$margin-5;
+}
+.{$pf}margin-b-10{
+  margin-bottom:$margin-10;
+}
+.{$pf}margin-b-20{
+  margin-bottom:$margin-20;
+}
+.{$pf}margin-tb-10{
+   margin:$margin-10 0;
+}
+.{$pf}margin-r-1{
+	margin-right:$margin-1;
+}
+.{$pf}padding-r-20{
+	padding-right:$margin-20;
+}
+.{$pf}padding-b-20{
+  padding-bottom:$margin-20;
+}
+.{$pf}padding-b-10{
+  padding-bottom:$margin-10;
+}
+.{$pf}padding-l-20{
+	padding-left:$margin-20;
+}
+.{$pf}padding-l-30{
+  padding-left:$margin-30;
+}
+.{$pf}padding-l-5{
+  padding-left:$margin-5;
+}
+.{$pf}padding-r-10{
+	padding-right:$margin-10;
+}
+.{$pf}padding-lr-10{
+  padding:0 $margin-10;
+}
+.{$pf}padding-lr-20{
+  padding:0 $margin-20;
+}
+.{$pf}padding-l-10{
+	padding-left:$margin-10;
+}
+.{$pf}padding-r-3{
+  padding-right:0.15rem;
+}
+.{$pf}padding-r-0{
+	padding-right:0;
+}
+.{$pf}padding-l-0{
+	padding-left:0 !important;
+}
+.{$pf}padding-tb-20{
+	padding:$margin-20 0;
+}
+.{$pf}padding-t-10{
+  padding-top:$margin-10 !important;
+}
+.{$pf}padding-t-20{
+  padding-top:$margin-20;
+}
+.{$pf}padding-tb-5{
+  padding:$margin-5 0;
+}
+.{$pf}padding-tb-10{
+  padding:$margin-10 0 !important;
+}
+.{$pf}padding-10{
+  padding:0.5rem !important;
+}
+.{$pf}padding-5{
+  padding:0.25rem !important;
+}
+.{$pf}width-8{
+  width:$width-8 !important;
+}
+.{$pf}width-20{
+  width:$width-20;
+}
+.{$pf}height-40{
+  height:$height-40;
+}
+.{$pf}grid-badge{
+}
+.{$pf}fill {object-fit: fill; height:100% }
+.{$pf}contain { object-fit: contain; height:100%}
+.{$pf}cover { object-fit: cover;height:100% }
+.{$pf}none { object-fit: none;height:100% }
+.{$pf}scale-down { object-fit: scale-down; height:100%}
+.{$pf}position-a{
+       position absolute;
+}
+.{$pf}position-r{
+       position:relative;
+}
+.{$pf}position-f-b{
+       position:fixed;
+       bottom 0px;
+       left:0px;
+       margin:0px !important;
+       height:15rem;
+       right:0px;
+       z-index:10;            
+}
+.{$pf}line-h{
+	line-height 1.45rem;
+}
+.{$pf}position-icon{
+	  position absolute;
+	  top:3px;
+    left:0.5rem;
+    // color: #666;
+}
+.{$pf}margin-auto{
+       margin:0 auto;
+}
+.{$pf}position-more{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 29%;
+}
+.{$pf}position-b-0{
+    position: absolute;
+    bottom: 0;
+}
+
+.{$pf}b-radius-10{
+  -webkit-border-radius: 0.5rem !important;
+    border-radius: 0.5rem !important;
+}
+.{$pf}b-radius-100 {
+  -webkit-border-radius: 5rem !important;
+  border-radius: 5rem !important;
+}
+.{$pf}rec{
+    border-left: 0.15rem solid $header-bg-orange;
+    padding-left: 0.25rem;
+    // margin-bottom: 0.5rem;
+    }
+.{$pf}p-left-58{
+       left:58% !important;
+}
+.{$pf}p-left-58{
+       left:58% !important;
+}
+.{$pf}p-left-0{
+       left:0% !important;
+}
+
+.{$pf}txt-orange{
+       color:$header-bg-orange;
+
+}//求助字体颜色
+.{$pf}activity-state{
+  background-color:#9ACD32;
+  color:#fff;
+}
+.{$pf}tip{
+   font-weight bold;
+}
+.{$pf}bg-f{
+background-color #fff;
+}
+.{$pf}bg-e{
+background-color #eee;
+}
+.{$pf}nowrap-c{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.{$pf}label-skill-tag{
+  position: absolute;
+    top: -0.3rem;
+    background-color: red;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 0 0.2rem;
+    left: 64%;
+    font-size:0.6rem;
+}
+.{$pf}height-62{
+  height:3.1rem;
+}
+
+header input::-webkit-input-placeholder { color:#fff;font-size 14px;}
+
+header input::-moz-placeholder { color:#00f;font-size 14px;  }
+
+.{$pf}position-activity{
+      position: absolute;
+    left: 16%;
+    bottom:-3px;
+}
+
+
+/*2016.11.11框架重新梳理*/
+.{$pf}height-15vw{
+  height:15vw !important;
+}
+.{$pf}like{ //点赞
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+
+/*个人中心*/
+.{$pf}uesr-label button{
+  display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.6rem;
+    line-height: 1;
+    color: #616161;
+    background-color: #e0e0e0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 1.15rem;
+    font-weight: bold;
+    color:#fff;
+}
+.{$pf}uesr-label button:first-child{
+background-color:#ff7f00;
+}
+.{$pf}uesr-label button:last-child{
+background-color:#03a9f4;
+}
+.{$pf}user-grid{
+  padding:0.5rem;
+}
+.{$pf}user-border-r{
+  border-right:1px solid #e0e0e0;
+}
+.{$pf}badge-else{
+  left:38% !important;
+  top:-3px;
+}
+
+/*活动*/
+.{$pf}activity-wrap{
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+     display: -webkit-flex; 
+     display: flex;    
+     align-items: center; 
+     height:2rem;
+     text-align center;
+     font-size 0.6rem;
+     color:#777;
+}
+.{$pf}activity-wrap i{
+  padding-right:3px;
+  font-size:0.5rem !important;
+}

@@ -1,0 +1,35 @@
+.fundraising-imgbox {
+  width: 5%;
+}
+.fundraising-imgbox img {
+  width: 1rem !important;
+}
+.fundraising-list li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.fundraising-list li .fundraising-list-txt {
+  margin: 0 0.75rem;
+  width: 90%;
+}
+.fundraising-list li .fundraising-list-txt h6 {
+  color: #777;
+}
+.fundraising-list li .fundraising-list-txt h3 {
+  font-weight: bold;
+}
+.fundraising-nav {
+  padding: 0.5rem;
+  color: #ff7f00 !important;
+  font-weight: bold;
+}
+.fundraising_end_body {
+  background-color: #fff !important;
+}

@@ -1,0 +1,43 @@
+.d-search {
+  display: -webkit-box;
+  -webkit-box-pack: center; /*子元素水平对齐方式*/
+  -webkit-box-align: center; /*子元素垂直对齐方式*/
+  height: 2.2rem;
+  overflow: hidden;
+  width: 70%;
+  -webkit-backface-visibility: hidden; /*隐藏被旋转的 div 元素的背面：*/
+  backface-visibility: hidden;
+}
+.d-search-box {
+  margin: 0 0.5rem;
+  border-radius: 10rem;
+  font-size: 0.7rem;
+  width: 100%;
+  position: relative;
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+.d-search-box input {
+  width: 99%;
+  display: -webkit-box;
+  background: none;
+  border: 0px;
+  outline: none;
+  padding-left: 1rem;
+  color: #fff;
+  font-size: 14px;
+  height: 30px;
+}
+.d-search .cancel {
+  font-size: 0.7rem;
+  color: #666;
+  margin-right: -2.2rem;
+  width: $width-44;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}

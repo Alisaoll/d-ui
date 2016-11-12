@@ -1,0 +1,34 @@
+@import 'variable.styl'
+// 
+.{$pf}card-list{
+	position: relative;
+    overflow: hidden;
+    margin: $margin-10 $margin-10 $margin-20 $margin-10;
+    background-color: #fff;
+    border-radius:$boeder-r-2;
+}
+.{$pf}card-image img{
+      width:100%;
+      display:block;
+}
+.{$pf}card-list{
+	.{$pf}card-content,.{$pf}card-footer{
+		  position: relative;
+	    min-height: $height-44;
+	    padding: $margin-10 $margin-15;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	  
+	}
+}
+.{$pf}card-footer{
+	   padding: 0 $margin-15 !important;
+	  line-height $height-44;
+}
+.{$pf}card-content-img{
+    padding:0 !important;
+}
+
+.{$pf}card-list .{$pf}card-list-inner{
+	margin-left:$margin-10;
+}

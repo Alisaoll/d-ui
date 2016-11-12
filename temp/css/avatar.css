@@ -1,0 +1,76 @@
+.avatar,
+.d-avatar-50,
+.d-avatar-30,
+.d-avatar-25,
+.d-avatar-80,
+.d-avatar-100,
+.d-avatar-120 {
+  display: block;
+  -webkit-background-size: cover;
+  -webkit-border-radius: 10rem;
+  border-radius: 10rem;
+  background-size: cover;
+  overflow: hidden;
+}
+.d-avatar-s-50 {
+  display: block;
+  -webkit-background-size: cover;
+  border-radius: 10rem;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.d-avatar-s-32 {
+  display: block;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 1.6rem;
+  height: $height-32;
+}
+.d-avatar-s-80 {
+  display: block;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 4rem;
+  height: 4rem;
+}
+.d-avatar-50 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem !important;
+  margin: 0 auto;
+}
+.d-avatar-30 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.d-avatar-25 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.d-avatar-50 > span,
+.d-avatar-80 > span,
+.d-avatar-100 > span,
+.d-avatar-120 > span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -webkit-border-radius: 10rem;
+  border-radius: 10rem;
+  background-size: cover;
+}
+.d-avatar-80 {
+  width: 4rem;
+  height: 4rem;
+}
+.d-avatar-100 {
+  width: 5rem;
+  height: 5rem;
+}
+.d-avatar-120 {
+  width: 6rem;
+  height: 6rem;
+}

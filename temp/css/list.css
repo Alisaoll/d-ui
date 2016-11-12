@@ -1,0 +1,99 @@
+.d-list {
+  background-color: #fff;
+  width: 100%;
+}
+.d-list-content {
+  box-sizing: border-box;
+  min-height: 2.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.d-list .d-list-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: start;
+}
+.d-list-items .d-list-img-wrap {
+  margin: 0 0.05rem;
+}
+.d-list li {
+  padding: 0.5rem 0;
+  position: relative;
+}
+.d-list-info {
+  padding-left: 0.55rem;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: box;
+  box-pack: center;
+}
+.d-list-txt {
+  font-size: 0.7rem;
+  color: #5f646e;
+  line-height: 1rem;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.d-list-txt-clamp-2 {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.d-list-txt-clamp-3 {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+.d-list li:active {
+  background-color: #eee;
+}
+.d-list [class=d-more] {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #777;
+  padding: 0.5rem 0 !important;
+}
+.d-list [class=d-more]:active {
+  background-color: #eee;
+}
+.d-list-position {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 27%;
+  font-size: 0.6rem;
+}
+.d-list-prev {
+  border-left: 0.15rem solid #ff7f00;
+  padding-left: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.d-list-wrap {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.d-list-wrap div {
+  width: 30%;
+  height: 20vw;
+}
